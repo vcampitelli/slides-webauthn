@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="594px"
+     height="481.5px" viewBox="-0.5 -0.5 396 321">
+    <defs>
+        <style type="text/css">@import url(https://fonts.googleapis.com/css?family=Lato);&#xa;</style>
+    </defs>
+    <g>
+        <g class="fragment" data-fragment-index="1">
+            <g id="cell-k0UuIuyGkKwyVQRQeWFf-2" class="fragment fade-out" data-fragment-index="4">
+                <path d="M 81.14 145.86 L 326.49 145.86" fill="none" stroke="#b3b3b3" stroke-miterlimit="10"
+                      pointer-events="stroke"/>
+                <path d="M 331.74 145.86 L 324.74 149.36 L 326.49 145.86 L 324.74 142.36 Z" fill="#b3b3b3"
+                      stroke="#b3b3b3"
+                      stroke-miterlimit="10" pointer-events="all"/>
+                <g transform="translate(-0.5 -0.5)">
+                    <switch>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                                       height="100%"
+                                       requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                 style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 143px; margin-left: 207px;">
+                                <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
+                                     data-drawio-colors="color: #666666; ">
+                                    <div style="display: inline-block; font-size: 11px; font-family: Lato; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                        2. Inicia a cerimônia de autenticação
+                                    </div>
+                                </div>
+                            </div>
+                        </foreignObject>
+                        <text x="207" y="143" fill="#666666" font-family="Lato" font-size="11px" text-anchor="middle">2.
+                            Inicia a cerimônia de autenticação
+                        </text>
+                    </switch>
+                </g>
+            </g>
+        </g>
+        <g class="fragment" data-fragment-index="3">
+            <g id="cell-k0UuIuyGkKwyVQRQeWFf-6" class="fragment fade-out" data-fragment-index="4">
+                <path d="M 67 180 L 67 253.63" fill="none" stroke="#b3b3b3" stroke-miterlimit="10"
+                      pointer-events="stroke"/>
+                <path d="M 67 258.88 L 63.5 251.88 L 67 253.63 L 70.5 251.88 Z" fill="#b3b3b3" stroke="#b3b3b3"
+                      stroke-miterlimit="10" pointer-events="all"/>
+                <g transform="translate(-0.5 -0.5)">
+                    <switch>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                                       height="100%"
+                                       requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                 style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 220px; margin-left: 73px;">
+                                <div style="box-sizing: border-box; font-size: 0px; text-align: left;"
+                                     data-drawio-colors="color: #666666; ">
+                                    <div style="display: inline-block; font-size: 11px; font-family: Lato; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                        4. Repassa o challenge e mais informações
+                                    </div>
+                                </div>
+                            </div>
+                        </foreignObject>
+                        <text x="73" y="223" fill="#666666" font-family="Lato" font-size="11px">4. Repassa o challenge e
+                            mais informações
+                        </text>
+                    </switch>
+                </g>
+            </g>
+        </g>
+        <g class="fragment" data-fragment-index="0">
+            <g id="cell-k0UuIuyGkKwyVQRQeWFf-8" class="fragment fade-out" data-fragment-index="4">
+                <path d="M 67 60 L 67 100 L 67 133.63" fill="none" stroke="#b3b3b3" stroke-miterlimit="10"
+                      stroke-dasharray="3 3" pointer-events="stroke"/>
+                <path d="M 67 138.88 L 63.5 131.88 L 67 133.63 L 70.5 131.88 Z" fill="#b3b3b3" stroke="#b3b3b3"
+                      stroke-miterlimit="10" pointer-events="all"/>
+                <g transform="translate(-0.5 -0.5)">
+                    <switch>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                                       height="100%"
+                                       requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                 style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 98px; margin-left: 73px;">
+                                <div style="box-sizing: border-box; font-size: 0px; text-align: left;"
+                                     data-drawio-colors="color: #666; ">
+                                    <div style="display: inline-block; font-size: 11px; font-family: Lato; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                        1. Começa o login
+                                    </div>
+                                </div>
+                            </div>
+                        </foreignObject>
+                        <text x="73" y="101" fill="#666" font-family="Lato" font-size="11px">1. Começa o login</text>
+                    </switch>
+                </g>
+            </g>
+        </g>
+        <g id="cell-MuWaEmWVoSnIJiQIX_fs-1">
+            <rect x="47" y="20" width="40" height="40" fill="none" stroke="none" pointer-events="all"/>
+            <path d="M 47 40 C 47 29.01 56 20 67 20 C 78.12 20 87 29.01 87 40 C 87 51.11 78.12 60 67 60 C 56 60 47 51.11 47 40 Z M 63 28.9 C 63 31.09 64.81 32.8 66.99 32.8 C 69.3 32.8 71.01 31.09 71.01 28.9 C 71.01 26.83 69.3 25 66.99 25 C 64.81 25 63 26.83 63 28.9 Z M 71.1 53.51 C 71.6 40.89 71.6 40.89 71.6 40.89 C 72.2 40.89 72.2 40.89 72.2 40.89 C 72.2 51.71 72.2 51.71 72.2 51.71 C 72.2 52.81 73.01 53.6 74.01 53.6 C 75 53.6 75.81 52.81 75.81 51.71 C 75.81 38.39 75.81 38.39 75.81 38.39 C 75.81 36.19 74.21 34.41 72.2 34.41 C 61.9 34.41 61.9 34.41 61.9 34.41 C 59.89 34.41 58.2 36.19 58.2 38.39 C 58.2 51.71 58.2 51.71 58.2 51.71 C 58.2 52.81 59.1 53.6 60.09 53.6 C 61.11 53.6 61.9 52.81 61.9 51.71 C 61.9 40.89 61.9 40.89 61.9 40.89 C 62.51 40.89 62.51 40.89 62.51 40.89 C 63 53.51 63 53.51 63 53.51 L 71.1 53.51 Z"
+                  fill="#28a8e0" stroke="none" pointer-events="all"/>
+            <ellipse cx="67" cy="40" rx="19.6" ry="19.6" fill="#ffffff" stroke="none" pointer-events="all"/>
+            <rect x="47" y="20" width="40" height="40" fill="none" stroke="none" pointer-events="all"/>
+            <path d="M 47 40 C 47 29.01 56 20 67 20 C 78.12 20 87 29.01 87 40 C 87 51.11 78.12 60 67 60 C 56 60 47 51.11 47 40 Z M 63 28.9 C 63 31.09 64.81 32.8 66.99 32.8 C 69.3 32.8 71.01 31.09 71.01 28.9 C 71.01 26.83 69.3 25 66.99 25 C 64.81 25 63 26.83 63 28.9 Z M 71.1 53.51 C 71.6 40.89 71.6 40.89 71.6 40.89 C 72.2 40.89 72.2 40.89 72.2 40.89 C 72.2 51.71 72.2 51.71 72.2 51.71 C 72.2 52.81 73.01 53.6 74.01 53.6 C 75 53.6 75.81 52.81 75.81 51.71 C 75.81 38.39 75.81 38.39 75.81 38.39 C 75.81 36.19 74.21 34.41 72.2 34.41 C 61.9 34.41 61.9 34.41 61.9 34.41 C 59.89 34.41 58.2 36.19 58.2 38.39 C 58.2 51.71 58.2 51.71 58.2 51.71 C 58.2 52.81 59.1 53.6 60.09 53.6 C 61.11 53.6 61.9 52.81 61.9 51.71 C 61.9 40.89 61.9 40.89 61.9 40.89 C 62.51 40.89 62.51 40.89 62.51 40.89 C 63 53.51 63 53.51 63 53.51 L 71.1 53.51 Z"
+                  fill="#28a8e0" stroke="none" pointer-events="all"/>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                                   height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 14px; margin-left: 67px;">
+                            <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
+                                 data-drawio-colors="color: #131200; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: Lato; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                    Usuário
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="67" y="14" fill="#131200" font-family="Lato" font-size="12px" text-anchor="middle">
+                        Usuário
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g class="fragment" data-fragment-index="2">
+            <g id="cell-k0UuIuyGkKwyVQRQeWFf-4" class="fragment fade-out" data-fragment-index="4">
+                <path d="M 332.86 174.14 L 87.51 174.14" fill="none" stroke="#b3b3b3" stroke-miterlimit="10"
+                      pointer-events="stroke"/>
+                <path d="M 82.26 174.14 L 89.26 170.64 L 87.51 174.14 L 89.26 177.64 Z" fill="#b3b3b3" stroke="#b3b3b3"
+                      stroke-miterlimit="10" pointer-events="all"/>
+                <g transform="translate(-0.5 -0.5)">
+                    <switch>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                                       height="100%"
+                                       requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                 style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 176px; margin-left: 207px;">
+                                <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
+                                     data-drawio-colors="color: #666666; ">
+                                    <div style="display: inline-block; font-size: 11px; font-family: Lato; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                        <div>3. Envia um challenge e outros dados
+                                            <br/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </foreignObject>
+                        <text x="207" y="187" fill="#666666" font-family="Lato" font-size="11px" text-anchor="middle">3.
+                            Envia um challenge e outros dados&#xa;
+                        </text>
+                    </switch>
+                </g>
+            </g>
+        </g>
+        <g id="cell-k0UuIuyGkKwyVQRQeWFf-14" class="fragment" data-fragment-index="7">
+            <path d="M 367 160 L 387 160 L 387 200 L 347 200 L 347 186.37" fill="none" stroke="#b3b3b3"
+                  stroke-miterlimit="10" pointer-events="stroke"/>
+            <path d="M 347 181.12 L 350.5 188.12 L 347 186.37 L 343.5 188.12 Z" fill="#b3b3b3" stroke="#b3b3b3"
+                  stroke-miterlimit="10" pointer-events="all"/>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                                   height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-end; width: 1px; height: 1px; padding-top: 207px; margin-left: 385px;">
+                            <div style="box-sizing: border-box; font-size: 0px; text-align: right;"
+                                 data-drawio-colors="color: #666666; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: Lato; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                    8. Valida a asserção com a chave pública do passo 2
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="385" y="218" fill="#666666" font-family="Lato" font-size="11px" text-anchor="end">8. Valida
+                        a asserção com a chave pública do passo 2
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g id="cell-k0UuIuyGkKwyVQRQeWFf-15" class="fragment" data-fragment-index="8">
+            <path d="M 332.86 174.14 L 87.51 174.14" fill="none" stroke="#b3b3b3" stroke-miterlimit="10"
+                  pointer-events="stroke"/>
+            <path d="M 82.26 174.14 L 89.26 170.64 L 87.51 174.14 L 89.26 177.64 Z" fill="#b3b3b3" stroke="#b3b3b3"
+                  stroke-miterlimit="10" pointer-events="all"/>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                                   height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 181px; margin-left: 207px;">
+                            <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
+                                 data-drawio-colors="color: #666666; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: Lato; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                    <div>9. Inicia a sessão do usuário</div>
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="207" y="192" fill="#666666" font-family="Lato" font-size="11px" text-anchor="middle">9.
+                        Inicia a sessão do usuário
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g id="cell-MuWaEmWVoSnIJiQIX_fs-4">
+            <image x="326.5" y="139.5" width="40" height="40"
+                   xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1OC4yIDU4LjIiPjxjaXJjbGUgdHJhbnNmb3JtPSJtYXRyaXgoLjcwNzEgLS43MDcxIC43MDcxIC43MDcxIC0xMi4wNDk1IDI5LjA5KSIgY3g9IjI5LjEiIGN5PSIyOS4xIiByPSIyOS4xIiBmaWxsPSIjZWFiZTFkIi8+PHBhdGggZD0iTTIyLjQgMjguM2MwLS40IDAtLjctLjEtMS4xbDIuMy0yLTEuOS0zLjItMi43LjljLS43LS42LTEuNC0xLTIuMi0xLjNsLS42LTIuNmgtMy43bC0uNiAyLjZjLS44LjMtMS42LjctMi4yIDEuM0w3LjkgMjIgNiAyNS4ybDIuMyAyYy0uMS43LS4xIDEuNSAwIDIuMmwtMi4zIDIgMS45IDMuMiAyLjctLjljLjcuNiAxLjQgMSAyLjIgMS4zbC42IDIuNmgzLjdsLjYtMi42Yy44LS4zIDEuNi0uNyAyLjItMS4zbDIuNy45IDEuOS0zLjItMi4zLTJjLjItLjQuMi0uOC4yLTEuMXptMS40IDMuMmwtMS40IDIuMy0yLjItLjctLjQtLjEtLjMuMmMtLjYuNS0xLjMuOS0yIDEuMmwtLjMuMS0uMS4zLS40IDIuMmgtMi44bC0uNS0yLjEtLjEtLjMtLjMtLjJjLS43LS4zLTEuNC0uNy0yLTEuMmwtLjMtLjItLjMuMS0yLjIuNy0xLjQtMi4zIDEuOS0xLjYuMy0uMi0uMS0uM2MtLjEtLjctLjEtMS4zIDAtMlYyN2wtLjMtLjJMNi43IDI1bDEuNC0yLjMgMi4yLjcuMy4xLjMtLjJjLjYtLjUgMS4zLS45IDItMS4ybC4zLS4xLjEtLjMuNS0yLjFoMi43bC41IDIuMS4xLjMuMy4yYy43LjMgMS40LjcgMiAxLjJsLjMuMi4zLS4xIDIuMi0uNyAxLjQgMi4zLTEuOCAxLjYtLjMuMnYuM2MuMS43LjEgMS4zIDAgMnYuM2wuMy4yIDIgMS44em0tOC41LTdjLTIuMSAwLTMuNyAxLjctMy43IDMuN2EzLjc2IDMuNzYgMCAwIDAgMy43IDMuNyAzLjc2IDMuNzYgMCAwIDAgMy43LTMuNyAzLjc2IDMuNzYgMCAwIDAtMy43LTMuN3ptMCA1Yy0uNyAwLTEuMi0uNS0xLjItMS4ycy41LTEuMiAxLjItMS4yIDEuMi41IDEuMiAxLjItLjYgMS4yLTEuMiAxLjJ6bTI0LjgtMTJjMC0uNCAwLS43LS4xLTEuMWwyLjMtMi0xLjktMy4yLTIuNy45Yy0uNy0uNi0xLjQtMS0yLjItMS4zbC0uNi0yLjZIMzFsLS42IDIuNmMtLjguMy0xLjYuNy0yLjIgMS4zbC0yLjctLjktMS45IDMuMiAyLjMgMmMtLjEuNy0uMSAxLjUgMCAyLjJsLTIuMyAyIDEuOSAzLjIgMi43LS45Yy43LjYgMS40IDEgMi4yIDEuM2wuNiAyLjZoMy43bC42LTIuNmMuOC0uMyAxLjYtLjcgMi4yLTEuM2wyLjcuOSAxLjktMy4yLTIuMy0yYy4yLS40LjMtLjcuMy0xLjF6bTEuMyAzLjNMNDAgMjMuMWwtMi4yLS43LS4zLS4xLS4zLjJjLS42LjUtMS4zLjktMiAxLjJsLS4zLjEtLjEuMy0uNSAyLjFoLTIuOEwzMSAyNGwtLjEtLjMtLjMtLjFjLS43LS4zLTEuNC0uNy0yLTEuMmwtLjItLjItLjQuMS0yLjIuNy0xLjQtMi4zIDEuOS0xLjYuMi0uMnYtLjNjLS4xLS43LS4xLTEuMyAwLTJ2LS40bC0uMy0uMi0xLjktMS43IDEuNC0yLjMgMi4yLjcuMy4xLjMtLjJjLjYtLjUgMS4zLS45IDItMS4ybC4zLS4xLjEtLjMuNS0yLjFoMi43bC41IDIuMS4xLjMuMy4xYy43LjMgMS40LjcgMiAxLjJsLjMuMi4zLS4xTDQwIDEybDEuNCAyLjMtMS45IDEuNi0uMy4ydi4zYy4xLjcuMSAxLjMgMCAydi4zbC4zLjIgMS45IDEuOXptLTguNS03Yy0yLjEgMC0zLjcgMS43LTMuNyAzLjdhMy43NiAzLjc2IDAgMCAwIDMuNyAzLjdjMi4xIDAgMy43LTEuNyAzLjctMy43cy0xLjYtMy43LTMuNy0zLjd6bTAgNWMtLjcgMC0xLjItLjYtMS4yLTEuMnMuNi0xLjIgMS4yLTEuMmMuNyAwIDEuMi42IDEuMiAxLjJzLS41IDEuMi0xLjIgMS4yem05LjggMjMuOWMuMi0uNC40LS45LjUtMS4zbDMuNy0xLS40LTQuNy0zLjYtLjVjLS40LTEtMS0yLTEuOC0yLjhsLjgtMy40LTQuMy0yLjEtMi4yIDIuN2MtMS4xLS4xLTIuMiAwLTMuMy4zbC0yLjctMi42LTQgMi42IDEuNSAzLjZjLS42LjgtMSAxLjctMS4zIDIuNmwtMy43IDEgLjQgNC43IDMuNi41Yy40IDEgMSAyIDEuOCAyLjhsLS43IDMuMiA0LjMgMi4xIDIuMi0yLjdhOS4yNiA5LjI2IDAgMCAwIDMuMy0uM2wyLjcgMi42IDQtMi42LTEuNS0zLjVjLjMtLjQuNS0uOC43LTEuMnptLS4yIDQuNUwzOS42IDQ5bC0yLjItMi4xLS4zLS4zLS40LjFjLTEgLjMtMiAuMy0zIC4yaC0uNGwtLjMuMy0xLjggMi4yLTMuMi0xLjUuNi0yLjcuMS0uNC0uMy0uM2E3LjgyIDcuODIgMCAwIDEtMS43LTIuNmwtLjItLjQtLjUtLjEtMy0uNC0uMy0zLjQgMy4xLS44LjQtLjEuMS0uNGMuMi0uOC42LTEuNiAxLjItMi40bC4zLS40LS4yLS40LTEuMi0zIDIuOS0xLjkgMi4yIDIuMS4zLjMuNC0uMWMxLS4zIDItLjMgMy0uMmguNGwuMy0uMyAxLjgtMi4yIDMuMiAxLjYtLjYgMi42LS4xLjQuMy4zYy43LjggMS4zIDEuNiAxLjcgMi42bC4yLjQuNS4xIDMgLjQuMyAzLjQtMy4yIDEtLjQuMS0uMS40Yy0uMi44LS42IDEuNi0xLjIgMi40bC0uMy40LjIuNCAxLjMgMi45em0tNS45LTEyLjljLTIuNC0xLjItNS4yLS4yLTYuNCAyLjJzLS4yIDUuMiAyLjIgNi40IDUuMi4yIDYuNC0yLjJjMS4yLTIuMy4yLTUuMi0yLjItNi40em0tMi44IDUuOGMtLjgtLjQtMS4xLTEuMy0uNy0yLjFzMS4zLTEuMSAyLjEtLjcgMS4xIDEuMy43IDIuMWMtLjQuNy0xLjMgMS4xLTIuMS43eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="/>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                                   height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 134px; margin-left: 347px;">
+                            <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
+                                 data-drawio-colors="color: #131200; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: Lato; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                    Aplicação
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="347" y="134" fill="#131200" font-family="Lato" font-size="12px" text-anchor="middle">
+                        Aplica...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g id="cell-k0UuIuyGkKwyVQRQeWFf-10" class="fragment" data-fragment-index="4">
+            <path d="M 47 280 L 7 280 L 7 40 L 40.63 40" fill="none" stroke="#b3b3b3" stroke-miterlimit="10"
+                  pointer-events="stroke"/>
+            <path d="M 45.88 40 L 38.88 43.5 L 40.63 40 L 38.88 36.5 Z" fill="#b3b3b3" stroke="#b3b3b3"
+                  stroke-miterlimit="10" pointer-events="all"/>
+            <g transform="translate(-0.5 -0.5)rotate(-90 13 160)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                                   height="100%"
+                                   requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 160px; margin-left: 13px;">
+                            <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
+                                 data-drawio-colors="color: #666666; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: Lato; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                    5. Realiza a autenticação
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="13" y="163" fill="#666666" font-family="Lato" font-size="11px" text-anchor="middle">5.
+                        Realiza a autenticação
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g class="fragment" data-fragment-index="5">
+            <g id="cell-k0UuIuyGkKwyVQRQeWFf-11" class="fragment fade-out" data-fragment-index="7">
+                <path d="M 87 280 L 117 280 L 117 174.11 L 87.51 174.14" fill="none" stroke="#b3b3b3"
+                      stroke-miterlimit="10"
+                      pointer-events="stroke"/>
+                <path d="M 82.26 174.14 L 89.26 170.64 L 87.51 174.14 L 89.26 177.64 Z" fill="#b3b3b3" stroke="#b3b3b3"
+                      stroke-miterlimit="10" pointer-events="all"/>
+                <g transform="translate(-0.5 -0.5)">
+                    <switch>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                                       height="100%"
+                                       requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                 style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 224px; margin-left: 123px;">
+                                <div style="box-sizing: border-box; font-size: 0px; text-align: left;"
+                                     data-drawio-colors="color: #666666; ">
+                                    <div style="display: inline-block; font-size: 11px; font-family: Lato; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                        6. Gera uma assserção assinada
+                                    </div>
+                                </div>
+                            </div>
+                        </foreignObject>
+                        <text x="123" y="228" fill="#666666" font-family="Lato" font-size="11px">6. Gera uma assserção
+                            assinada
+                        </text>
+                    </switch>
+                </g>
+            </g>
+        </g>
+        <g id="cell-k0UuIuyGkKwyVQRQeWFf-5">
+            <image x="46.5" y="259.5" width="40" height="40"
+                   xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1OS44IDU5LjgiPjxjaXJjbGUgY3g9IjI5LjkiIGN5PSIyOS45IiByPSIyOS45IiBmaWxsPSIjZTIyMTMzIi8+PHBhdGggZD0iTTIyLjYgOS4xaDE0LjVjMi40IDAgNC4zIDEuOSA0LjMgNC4zdjMyLjhjMCAyLjQtMS45IDQuMy00LjMgNC4zSDIyLjZjLTIuNCAwLTQuNC0xLjktNC40LTQuM1YxMy41Yy4xLTIuNCAyLTQuNCA0LjQtNC40eiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEuMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+PHBhdGggZD0iTTI1LjggMTQuMUgzNGMyLjQgMCA0LjMgMS45IDQuMyA0LjRWNDBjMCAyLjQtMS45IDQuMy00LjMgNC4zaC04LjJjLTIuNCAwLTQuNC0xLjktNC40LTQuM1YxOC41YzAtMi40IDItNC40IDQuNC00LjR6IiBmaWxsPSIjZGYyMjMzIi8+PHBhdGggZD0iTTIyLjkgMjZjLS4xLS44IDAtMS41LjItMi4zcy42LTEuNSAxLjEtMi4xYzEtMS40IDIuNi0yLjQgNC4zLTIuNy42LS4xIDEuMy0uMiAxLjktLjEuNy4xIDEuNC4yIDIgLjUuNy4zIDEuNC43IDIgMS4zLjUuNC45LjkgMS4zIDEuNWExMS45NCAxMS45NCAwIDAgMSAuOCAxLjZjLjEuMy4yLjcuMiAxLjFsLjEgNC45bS0xNC4xLTIuMmMuNi4xIDEuMi0uMiAxLjUtLjdhMS42OSAxLjY5IDAgMCAwIC4zLTFsLjItMS4zYy4xLS40LjItLjguNC0xLjIuNC0uOCAxLTEuNSAxLjgtMiAxLjItLjkgMi44LTEuMiA0LjItLjguNi4xIDEuMS40IDEuNi43cy45LjcgMS4zIDEuMmMuNC40LjcuOC45IDEuMy4xLjIuMS41LjIuOGwuMSA0LjRjLS4xLjMgMCAuNi4xLjlzLjQuNS42LjZjLjMuMi43LjQgMS4yLjRtLTE0LjUtMS42Yy4zLjEuNy4xIDEgMCAuNC0uMS44LS4zIDEuMi0uNWEyLjQxIDIuNDEgMCAwIDAgMS0xYy4yLS42LjQtMS4yLjQtMS44IDAtLjUuMS0xIC4zLTEuNS4yLS40LjQtLjcuNy0xcy42LS41LjktLjdjLjctLjQgMS41LS41IDIuMy0uNGExLjkzIDEuOTMgMCAwIDEgMSAuM2wuOS42Yy4zLjMuNi42LjguOXMuMy42LjQgMXY0LjhjMCAuMiAwIC41LjEuNy4yLjQuNS43LjggMWwuOS42Yy41LjMgMS4xLjQgMS44LjRtLTE0LjQtMS43Yy4zLjEuNi4xLjkgMCAuNC0uMS45LS4yIDEuMy0uNGwuOS0uNmMuNS0uNC45LS44IDEuMy0xLjMuMy0uMy41LS43LjYtMS4xcy4yLS43LjItMS4xYzAtLjMuMS0uNy4yLTFhMS4wOCAxLjA4IDAgMCAxIC4zLS43Yy4xLS4yLjMtLjQuNS0uNS4yLS4yLjUtLjMuOC0uNC4yIDAgLjQgMCAuNy4xbC42LjNjLjIuMi40LjQuNS42LjIuNS4yLjkuMSAxLjRhNi4yOCA2LjI4IDAgMCAxLS4zIDEuOWMtLjMuOC0uNiAxLjUtMS4xIDIuMi0uOSAxLjItMiAyLjItMy4zIDIuOHMtMi42IDEtNC4xIDEuMW0uMi0xLjZjLjYgMCAxLjEtLjEgMS43LS4yIDEtLjMgMi0uOCAyLjgtMS42LjUtLjUgMS0xIDEuNC0xLjYuMy0uNC41LS44LjctMS4zYTUuMjQgNS4yNCAwIDAgMCAuMy0yLjVtLjMgNy4xaC44bS45LTEuN2wuMy44Yy4yLjQuNS44LjkgMS4xYTYuNDIgNi40MiAwIDAgMCAxLjMgMWMuNC4yLjcuNCAxLjIuNXMxIC4yIDEuNi4xbS0xLjMgMS45bC0xLjEtLjRjLS40LS4xLS44LS4zLTEuMS0uNS0uNi0uMy0uNy0uNC0xLjItLjYtLjQtLjItLjktLjQtMS40LS41cy0xLjEtLjEtMS42IDBjLS40LjEtLjcuMi0xLjEuNC0xLjEuNS0xLjEuNy0xLjguOS0uNS4yLTEuMS40LTEuNy40LS4zLjEtLjguMS0xLjIuMW0xLjQgMS42Yy4zIDAgLjctLjEgMS0uMS4zLS4xLjctLjIgMS0uNC40LS4yLjQtLjIuOC0uNXMuNi0uMy44LS40Yy4zLS4xLjYtLjMuOS0uM2guN2MuMyAwIC41IDAgLjguMXMuNi4yLjguNGwuNi40Yy4xLjEuNS4zLjguNC40LjIuOS4zIDEuNC40bS03LjggMS41bDEtLjNjLjQtLjEuNy0uMyAxLS41LjQtLjMuNC0uMy42LS40LjMtLjEuNi0uMS45LS4xcy42LjEuOC4yLjQuMi43LjRjLjQuMi40LjMuNy41LjIuMS40LjIuNS4ybS0zLjIuNWgxIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIuOCIvPjxnIGZpbGw9IiNkZjIyMzMiPjxjaXJjbGUgY3g9IjI5LjciIGN5PSI0Ny40IiByPSIxLjgiLz48cGF0aCBkPSJNMjcuNCAxMC42aDQuOHYuOWgtNC44eiIvPjwvZz48L3N2Zz4="/>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                                   height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 307px; margin-left: 67px;">
+                            <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
+                                 data-drawio-colors="color: #131200; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: Lato; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                    Autenticador
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="67" y="319" fill="#131200" font-family="Lato" font-size="12px" text-anchor="middle">
+                        Autent...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g id="cell-k0UuIuyGkKwyVQRQeWFf-13" class="fragment" data-fragment-index="6">
+            <path d="M 87 160 L 320.63 160" fill="none" stroke="#b3b3b3" stroke-miterlimit="10"
+                  pointer-events="stroke"/>
+            <path d="M 325.88 160 L 318.88 163.5 L 320.63 160 L 318.88 156.5 Z" fill="#b3b3b3" stroke="#b3b3b3"
+                  stroke-miterlimit="10" pointer-events="all"/>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                                   height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 157px; margin-left: 207px;">
+                            <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
+                                 data-drawio-colors="color: #666666; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: Lato; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                    7. Envia a asserção
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="207" y="157" fill="#666666" font-family="Lato" font-size="11px" text-anchor="middle">7.
+                        Envia a asserção
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g id="cell-k0UuIuyGkKwyVQRQeWFf-7">
+            <image x="46.5" y="139.5" width="40" height="40"
+                   xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1OS42IDU5LjYiPjxjaXJjbGUgY3g9IjI5LjgiIGN5PSIyOS44IiByPSIyOS44IiBmaWxsPSIjYzI5NTJkIi8+PHBhdGggZD0iTTkuOSAxMi4zaDM5Ljh2MzEuMkg5Ljl6IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0iTTEzIDE1LjRoMzMuN3YyNC4xSDEzeiIgZmlsbD0iI2MyOTUyZCIvPjxwYXRoIGQ9Ik0xMyA0NC40aDMzLjd2Mi45SDEzeiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="/>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                                   height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 134px; margin-left: 67px;">
+                            <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
+                                 data-drawio-colors="color: #131200; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: Lato; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                    Navegador
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="67" y="134" fill="#131200" font-family="Lato" font-size="12px" text-anchor="middle">
+                        Navega...
+                    </text>
+                </switch>
+            </g>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems"
+           target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">Text is not SVG - cannot display</text>
+        </a>
+    </switch>
+</svg>

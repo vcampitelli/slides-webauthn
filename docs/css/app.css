@@ -1,0 +1,234 @@
+:root {
+  --r-main-font-size: 28px;
+  --r-heading1-size: 2.11em;
+  --r-heading2-size: 1.55em;
+  --r-heading3-size: 1.28em;
+  --r-heading4-size: 1em;
+  --r-code-font: Fira Code, Liberation Mono, Lucida Console, monospace;
+  --r-main-color: #131200;
+  --r-main-font: Inter, sans-serif;
+  --r-heading-color: var(--r-main-color);
+  --r-heading-font: var(--r-main-font);
+  --r-heading-letter-spacing: -2px;
+  --r-heading-text-transform: normal;
+  --r-background-color: #efefef;
+  --background-color-alt: #e9e9e9;
+  --background-color-alt-darker: #afafaf;
+  --r-link-color: #3454d1;
+  --r-link-color-dark: #2444c1;
+  --r-link-color-hover: #5474f1;
+  --turquoise: #09bc8a;
+}
+
+/* Primeiro slide */
+.first-slide > h1 {
+  --r-heading1-size: 3em;
+  --r-heading-letter-spacing: -3px;
+  --r-heading-line-height: 1;
+  --r-heading-font-weight: 800;
+}
+
+/* Layout */
+h1 {
+  --r-heading-font-weight: 800;
+}
+.reveal {
+  font-weight: 400;
+}
+.reveal ::selection {
+  color: var(--r-background-color);
+  background-color: var(--turquoise);
+}
+.reveal .slides {
+  text-align: left;
+  letter-spacing: -1px;
+}
+.reveal blockquote,
+.reveal pre {
+    margin-left: 0;
+    margin-right: 0;
+}
+.reveal blockquote {
+  background-color: var(--background-color-alt);
+  padding: 15px;
+}
+.reveal blockquote + p {
+  opacity: 0.5;
+  font-size: 0.8em;
+  font-style: italic;
+}
+.reveal pre {
+  width: 100%;
+}
+.reveal strong,
+.reveal b {
+  font-weight: 600;
+}
+.reveal .controls,
+.color-accent {
+  color: var(--turquoise);
+}
+img.r-stretch {
+  margin: 0;
+}
+.svg-wrapper {
+  letter-spacing: -0.5px;
+}
+
+/* Posicionamento */
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.d-flex.half-columns > div {
+  flex: 50% 0 1;
+}
+
+/* Tipografia */
+h1.subtitle {
+  --r-heading1-size: 1em;
+  --r-heading-line-height: 1;
+  --r-heading-margin: 0;
+  --r-heading-color: var(--turquoise);
+  --r-heading-font-weight: 500;
+}
+h1 > span,
+h2 > span {
+  color: var(--turquoise);
+}
+.fw-bold {
+  font-weight: bold;
+}
+.text-center {
+  text-align: center;
+}
+.font-small {
+  font-size: 0.8em;
+}
+code.font-small {
+  letter-spacing: -0.25px;
+  line-height: 1.35;
+}
+
+/* Referência */
+div + a.reference,
+ul + a.reference,
+img + a.reference,
+p + a.reference {
+  display: block;
+}
+a.reference {
+  margin-top: 2rem;
+  font-size: 0.7em;
+  opacity: 0.75;
+}
+a.reference:is(:hover, :focus) {
+  opacity: 1;
+}
+a.reference:before {
+  content: "[ ";
+  opacity: 0.5;
+}
+a.reference:after {
+  content: " ]";
+  opacity: 0.5;
+}
+
+/* Listas */
+.reveal ul {
+  display: block;
+}
+.reveal ul {
+  list-style-type: square;
+}
+.reveal ul ul {
+  list-style-type: circle;
+}
+li + li {
+  margin-top: 0.5em;
+}
+li > ul > li + li {
+  margin-top: 0;
+}
+
+/* Margens */
+.mt-0 {
+  margin-top: 0 !important;
+}
+.my-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Sobre mim */
+#about-me {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 3rem;
+}
+#about-me > ul {
+  align-self: center;
+}
+#about-me > ul > li + li {
+  margin-top: 0;
+}
+#profile-pic {
+  margin-bottom: 0;
+  border-radius: 50%;
+}
+.about-me-links {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2.5rem;
+  justify-content: start;
+}
+.about-me-links > div {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  column-gap: 0.4em;
+}
+.about-me-links > div > svg {
+  width: 40px;
+}
+.about-me-links > div > div {
+  line-height: 1;
+}
+.about-me-links > div > svg .fill {
+  fill: var(--r-link-color);
+}
+.about-me-links > div > svg .fill-bg {
+  fill: var(--r-background-color);
+}
+.about-me-links > div > div > p {
+  margin: 0;
+  font-size: 0.9em;
+  line-height: 1;
+}
+.about-me-links > div > div > a {
+  font-weight: 600;
+}
+
+/* Fragments */
+span.fragment.grow.visible {
+  font-weight: 600;
+}
+
+/* Código */
+code:not(.hljs) {
+  background-color: var(--background-color-alt);
+  color: var(--turquoise);
+  padding: 0 5px;
+  letter-spacing: -2px;
+  font-size: 0.8em;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: var(--background-color-alt-darker);
+  font-size: 0.8em;
+  letter-spacing: -2px;
+}

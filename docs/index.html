@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="author" content="Vinícius Campitelli, eu@viniciuscampitelli.com">
+
+        <title>WebAuthn: o novo padrão de autenticação na Web</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="reveal.js/dist/reset.css">
+        <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/dracula.min.css"
+              integrity="sha512-zKpFlhUX8c+WC6H/XTJavnEpWFt2zH9BU9vu0Hry5Y+SEgG21pRMFcecS7DgDXIegXBQ3uK9puwWPP3h6WSR9g=="
+              crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="reveal.js/dist/theme/white.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section class="first-slide">
+                    <h1><span>WebAuthn:</span><br> o “novo” padrão de<br>autenticação<br>na Web</h1>
+                </section>
+
+                <section> <!-- Sobre mim -->
+                    <section data-auto-animate>
+                        <h1>Sobre mim</h1>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Sobre mim</h1>
+                        <div id="about-me">
+                            <div class="text-center">
+                                <img src="img/profile.jpg" alt="Vinícius Campitelli" id="profile-pic">
+                            </div>
+                            <ul>
+                                <li>Desenvolvedor há 15 anos</li>
+                                <li>Entusiasta em cibersegurança</li>
+                                <li>Consultor de TI e instrutor de treinamentos</li>
+                                <li>DevRel na <a href="https://fusionauth.io" target="_blank" rel="noopener">FusionAuth</a></li>
+                            </ul>
+                            <div class="fw-bold text-center">Vinícius<br>Campitelli</div>
+                            <div class="about-me-links">
+                                <div>
+                                    <svg role="img" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                                              class="fill"></path>
+                                    </svg>
+                                    <div>
+                                        <p>Slides &amp; GitHub</p>
+                                        <a href="https://github.com/vcampitelli" target="_blank" rel="noopener">
+                                            vcampitelli
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"
+                                              class="fill"></path>
+                                    </svg>
+                                    <div>
+                                        <p>Twitter</p>
+                                        <a href="https://twitter.com/vcampitelli" target="_blank" rel="noopener">
+                                            vcampitelli
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <svg role="img" viewBox="0 0 74 74" xmlns="http://www.w3.org/2000/svg">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z"
+                                                  class="fill"/>
+                                            <path d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z"
+                                                  class="fill-bg"/>
+                                        </g>
+                                    </svg>
+                                    <div>
+                                        <p>LinkedIn</p>
+                                        <a href="https://linkedin.com/in/viniciuscampitelli" target="_blank"
+                                           rel="noopener">
+                                            Vinícius Campitelli
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section> <!-- Sobre mim -->
+
+                <section> <!-- Agenda -->
+                    <section data-auto-animate data-auto-animate-restart>
+                        <h1>Agenda</h1>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Agenda</h1>
+                        <ul>
+                            <li>O que é WebAuthn?</li>
+                            <li>Por que usar?</li>
+                            <li>O que são as cerimônias?</li>
+                            <li>Como implementar?</li>
+                            <li>Demo</li>
+                        </ul>
+                    </section>
+                </section> <!-- Agenda -->
+
+                <section> <!-- O que é? -->
+                    <section data-auto-animate data-auto-animate-restart>
+                        <h1>O que é <span>WebAuthn</span>?</h1>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>O que é <span>WebAuthn</span>?</h1>
+                        <blockquote>
+                            This specification defines an API enabling the creation and use of strong, attested, scoped,
+                            public key-based credentials by web applications, for the purpose of strongly authenticating
+                            users
+                        </blockquote>
+                        <a href="https://w3c.github.io/webauthn/" target="_blank" rel="noopener" class="reference">
+                            w3c.github.io/webauthn
+                        </a>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>O que é <span>WebAuthn</span>?</h1>
+                        <ul>
+                            <li>Mais uma forma de <b>autenticação</b></li>
+                            <li class="fragment">Precisa de um <b>autenticador</b></li>
+                            <li class="fragment">Retira a necessidade de <b>senhas</b></li>
+                            <li class="fragment">Baseado em chaves públicas e privadas</li>
+                            <li class="fragment">
+                                Parte do <a href="" target="_blank" rel="noopener">framework FIDO2</a>, que veremos em
+                                breve
+                            </li>
+                        </ul>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>O que é <span>WebAuthn</span>?</h1>
+                        <ul>
+                            <li>
+                                Primeira versão: <a href="https://www.w3.org/TR/2016/WD-webauthn-20160531/"
+                                                    target="_blank" rel="noopener">31/05/2016</a>
+                            </li>
+                            <li>
+                                Versão estável: <a href="https://www.w3.org/TR/2021/WD-webauthn-3-20210427/"
+                                                   target="_blank" rel="noopener">27/04/2021</a>
+                            </li>
+                            <li>
+                                Última versão: <a href="https://w3c.github.io/webauthn/"
+                                                  target="_blank" rel="noopener">09/08/2023</a>
+                            </li>
+                        </ul>
+                        <a href="https://w3c.github.io/webauthn/" target="_blank" rel="noopener" class="reference">
+                            w3c.github.io/webauthn
+                        </a>
+                    </section>
+                    <section>
+                        <h1 class="subtitle">O que é WebAuthn?</h1>
+                        <h2>FIDO</h2>
+                        <blockquote>
+                            The FIDO ("Fast IDentity Online") Alliance is an open industry association launched in
+                            February 2013 whose stated mission is to develop and promote authentication standards that
+                            "help reduce the world’s over-reliance on passwords"
+                        </blockquote>
+                        <a href="https://en.wikipedia.org/wiki/FIDO_Alliance" target="_blank" rel="noopener"
+                           class="reference">
+                            Wikipedia: FIDO Alliance
+                        </a>
+                    </section>
+                    <section>
+                        <h1 class="subtitle">O que é WebAuthn?</h1>
+                        <h2>Framework FIDO2</h2>
+                        <p>
+                            Ação conjunta da <a>FIDO Alliance</a> com a <a>World Wide Web Consortium (W3C)</a> que criou
+                            dois padrões:
+                        </p>
+                        <ul>
+                            <li>Web Authentication: <code>WebAuthn</code></li>
+                            <li>Client-to-Authenticator Protocol: <code>CTAP</code></li>
+                        </ul>
+                        <a href="https://fidoalliance.org/fido2/" target="_blank" rel="noopener" class="reference">
+                            fidoalliance.org/fido2
+                        </a>
+                    </section>
+                    <section>
+                        <h1 class="subtitle">O que é WebAuthn?</h1>
+                        <h2>Fluxo</h2>
+                        <img src="img/standards.svg" alt="Fluxo" class="insert-svg">
+                    </section>
+                </section> <!-- O que é? -->
+
+                <section> <!-- Por que usar? -->
+                    <section data-auto-animate data-auto-animate-restart>
+                        <h1>Senhas são <span>ruins</span></h1>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Senhas são <span>ruins</span></h1>
+                        <ul class="margin">
+                            <li>
+                                Primeiro registro de <b>senhas digitais</b>?
+                                <span class="fragment">Em <b>1961</b> no sistema <a
+                                        href="https://en.wikipedia.org/wiki/Compatible_Time-Sharing_System"
+                                        target="_blank" rel="noopener">CTSS</a> do MIT</span>
+                            </li>
+                            <li>
+                                Primeiro <b>vazamento de senhas</b>?
+                                <span class="fragment">Em <b>1966</b>, no mesmo sistema</span>
+                            </li>
+                        </ul>
+                        <a href="https://www.wired.com/2012/01/computer-password/" target="_blank" rel="noopener"
+                           class="reference">
+                            The World's First Computer Password? It Was Useless Too | WIRED
+                        </a>
+                    </section>
+                    <section>
+                        <h1>Senhas são <span>ruins</span></h1>
+                        <ul class="margin">
+                            <li>
+                                Difícil equilíbrio
+                                <ul>
+                                    <li>Complexas o bastante para não serem quebradas</li>
+                                    <li>Simples o bastante para serem lembradas</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="fragment grow">Muitos</span> vazamentos
+                                <ul>
+                                    <li>
+                                        12.5 bilhões de contas em <a href="https://haveibeenpwned.com" target="_blank"
+                                                                     rel="noopener">haveibeenpwned.com</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>São normalmente reutilizadas pelos usuários</li>
+                        </ul>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Alternativas são <span>ruins</span></h1>
+                        <ul class="margin">
+                            <li>
+                                Gerenciador de senhas
+                                <ul>
+                                    <li>Necessita de um servidor central para se tornar portável</li>
+                                    <li>
+                                        Alvo muito mais visado para atacantes
+                                        <ul>
+                                            <li>
+                                                <a href="https://password-managers.bestreviews.net/faq/which-password-managers-have-been-hacked/"
+                                                   target="_blank" rel="noopener">Which Password Managers Have Been
+                                                    Hacked?</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>A experiência pode não ser muito boa em alguns formulários</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Alternativas são <span>ruins</span></h1>
+                        <ul>
+                            <li>
+                                Duplo-fator de autenticação (2FA)
+                                <ul>
+                                    <li>Difícil de acertar na UX</li>
+                                    <li>Pode não ser tão seguro (por exemplo, SMS)</li>
+                                    <li>Usuários podem sofrer <em>phishing</em></li>
+                                    <li>Os desenvolvedores devem saber quando requisitar</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Alternativas são <span>ruins</span></h1>
+                        <ul>
+                            <li>
+                                Single Sign-On (SSO)
+                                <ul>
+                                    <li>Dependente do serviço de terceiros</li>
+                                    <li>Pode ser alterado por questões financeiras</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </section> <!-- Por que usar? -->
+
+                <section> <!-- WebAuthn oferece equilíbrio -->
+                    <section data-auto-animate data-auto-animate-restart>
+                        <h1>WebAuthn oferece <span>equilíbrio</span></h1>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>WebAuthn oferece <span>equilíbrio</span></h1>
+                        <p>Em questões de <b>segurança</b>:</p>
+                        <ul>
+                            <li>Mesma tecnologia usada em SSH e TLS</li>
+                            <li>Disponível somente em HTTPS</li>
+                            <li>Confere o nome do domínio</li>
+                            <li>Envolve muitos pesquisadores e instituições confiáveis</li>
+                            <li>O banco de dados do servidor não possui informações sigilosas</li>
+                        </ul>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>WebAuthn oferece <span>equilíbrio</span></h1>
+                        <p>Em questões de <b>experiência do usuário</b>:</p>
+                        <ul>
+                            <li>Embutido nos navegadores</li>
+                            <li>Sem possibilidade de perder senhas</li>
+                            <li>Resistente a ataques de <em>phishing</em></li>
+                            <li>Pode funcionar como 1&ordm; ou 2&ordm; fator</li>
+                        </ul>
+                    </section>
+                </section> <!-- WebAuthn oferece equilíbrio -->
+
+                <section> <!-- Suporte -->
+                    <section data-auto-animate data-auto-animate-restart>
+                        <h1>Suporte</h1>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Suporte</h1>
+                        <img src="img/caniuse.png" alt="Can I Use? WebAuthn" class="r-stretch" style="margin: -20px">
+                        <a href="https://caniuse.com/webauthn" target="_blank" rel="noopener" class="reference mt-0">
+                            caniuse.com/webauthn
+                        </a>
+                    </section>
+                </section> <!-- Suporte -->
+
+                <section> <!-- Fluxo de Autenticação -->
+                    <section data-auto-animate data-auto-animate-restart>
+                        <h1>Fluxo de Autenticação</h1>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Fluxo de Autenticação</h1>
+                        <img src="img/login-flow.svg" alt="Login com WebAuthn" class="insert-svg">
+                    </section>
+                </section> <!-- Fluxo de Autenticação -->
+
+                <section> <!-- Autenticadores -->
+                    <section data-auto-animate data-auto-animate-restart>
+                        <h1>Autenticadores</h1>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Autenticadores</h1>
+                        <p class="fw-bold">Via <span class="color-accent">Hardware Externo</span>:</p>
+                        <div class="d-flex">
+                            <ul>
+                                <li>São <em>cross-platform</em></li>
+                                <li>
+                                    Relativamente caros: a Yubikey sai por US$50 no site oficial ou entre R$300-400 no Brasil
+                                </li>
+                                <li>
+                                    Exemplos:
+                                    <ul>
+                                        <li><a href="https://www.yubico.com/" target="_blank" rel="noopener">Yubikey</a></li>
+                                        <li><a href="https://solokeys.com/" target="_blank" rel="noopener">Solokey</a></li>
+                                        <li><a href="https://trezor.io" target="_blank" rel="noopener">Trezor</a></li>
+                                        <li><a href="https://cloud.google.com/titan-security-key/" target="_blank" rel="noopener">Google Titan</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <figure>
+                                <img src="img/yubikey.png" alt="Yubikey" style="max-width: 300px;" class="my-0">
+                                <figcaption>
+                                    <a href="https://www.yubico.com/br/product/yubikey-5-series/yubikey-5-nfc/"
+                                       target="_blank" rel="noopener" class="reference">Yubikey</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Autenticadores</h1>
+                        <p class="fw-bold">Via <span class="color-accent">Software</span>:</p>
+                        <div class="d-flex">
+                            <ul>
+                                <li>Embutidos na própria plataforma</li>
+                                <li>
+                                    Exemplos:
+                                    <ul>
+                                        <li>Windows Hello</li>
+                                        <li>Apple Touch ID</li>
+                                        <li>Android Fingerprint</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <img src="img/android.png" alt="Android" style="max-width: 300px; border-radius: 10px;"
+                                 class="my-0">
+                        </div>
+                    </section>
+                </section> <!-- Autenticadores -->
+
+                <section> <!-- Cerimônias -->
+                    <section data-auto-animate data-auto-animate-restart>
+                        <h1>Cerimônias</h1>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Cerimônias</h1>
+                        <blockquote cite="https://w3c.github.io/webauthn/#ceremony">
+                            The concept of a ceremony is an extension of the concept of a network protocol, with human
+                            nodes alongside computer nodes and with communication links that include user interface(s),
+                            human-to-human communication, and transfers of physical objects that carry data. What is
+                            out-of-band to a protocol is in-band to a ceremony.
+                        </blockquote>
+                        <p>— The WebAuthn specification</p>
+                        <a href="https://w3c.github.io/webauthn/#ceremony" target="_blank" rel="noopener"
+                           class="reference">
+                            WebAuthn | Glossário: Cerimônia
+                        </a>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Cerimônias</h1>
+                        <div class="d-flex half-columns">
+                            <div class="fragment">
+                                <p class="fw-bold">Registro</p>
+                                <p>
+                                    Envolve o processo de <b>Atestação</b>, em que o Servidor pode verificar a
+                                    autenticidade do autenticador e verificar suas funcionalidades
+                                </p>
+                            </div>
+                            <div class="fragment">
+                                <p class="fw-bold">Autenticação</p>
+                                <p>
+                                    Envolve o processo de <b>Asserção</b>
+                                <p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h1 class="subtitle">Cerimônias</h1>
+                        <h2>Atestação</h2>
+                        <p>
+                            Quando o autenticador registra um novo par de chaves para um serviço, ele assina a
+                            chave pública com seu <em>certificado de atestação</em>
+                        </p>
+                        <p>
+                            O <em>certificado de atestação</em> é embutido no autenticador durante sua fabricação, sendo
+                            específico para aquele modelo de dispositivos
+                        </p>
+                        <p>
+                            Através do <a href="https://www.w3.org/TR/webauthn/#sctn-defined-attestation-formats"
+                                          target="_blank" rel="noopener">Attestation Statement Format</a>, é possível
+                            saber mais informações sobre o tipo do dispositivo que emitiu o par de chaves
+                        </p>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Authentication_API/Attestation_and_Assertion"
+                           target="_blank" rel="noopener" class="reference">Attestation and Assertion | MDN</a>
+                    </section>
+                    <section>
+                        <h1 class="subtitle">Cerimônias</h1>
+                        <h2>Atestação</h2>
+                        <p>
+                            Para confirmar que o autenticador é legítimo, há um repositório central com os metadados dos
+                            autenticadores reconhecidos em <a href="https://fidoalliance.org/metadata/" target="_blank"
+                                                              rel="noopener">fidoalliance.org/metadata</a>
+                        </p>
+                        <pre><code class="json font-small" data-trim>
+                            {
+                              "aaguid": "08987058-cadc-4b81-b6e1-30de50dcbe96",
+                              "metadataStatement": {
+                                "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
+                                "aaguid": "08987058-cadc-4b81-b6e1-30de50dcbe96",
+                                "description": "Windows Hello Hardware Authenticator",
+                                "authenticatorVersion": 1,
+                                "protocolFamily": "fido2",
+                                "schema": 3,
+                                "upv": [{ "major": 1, "minor": 0 }],
+                                "authenticationAlgorithms": [ "rsassa_pkcsv15_sha256_raw" ],
+                                "publicKeyAlgAndEncodings": [ "cose" ],
+                                "attestationTypes": [ "attca" ],
+                                "userVerificationDetails": [
+                                  [{ "userVerificationMethod": "eyeprint_internal" }],
+                                  [{ "userVerificationMethod": "passcode_internal" }],
+                                  [{ "userVerificationMethod": "fingerprint_internal" }],
+                                  [{ "userVerificationMethod": "faceprint_internal" }]
+                                ],
+                                "keyProtection": [ "hardware" ],
+                                "isKeyRestricted": false,
+                                "matcherProtection": [ "software" ],
+                                "attachmentHint": [ "internal" ],
+                                "tcDisplay": [],
+                                "attestationRootCertificates": [
+                                  "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"
+                                ],
+                                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAACkUlEQVR42uyai3GDMAyGQyegGzACnaCMkBHoBhkhnSAj0A2SDaAT0E6QbEA3cOXW6XEpBtnImMv9utOllxjF/qKHLTdRSm0gdnkAAgACIAACIAACIAACIAgAARAAARAAARAAARBEAFCSJINKkpLuSTtSZbQz76W25zhKkpFWPbtaz6Q75vPuoluuPmqxlZK2yi76s9RznjlpN2K7CrFWaUAHNS0HT0Atw3YpDSjxbdoPuaziG3uk579cvIdeWsbQD7L7NAYoWpKmLy8chueO5reB7KKKrQnQJdDYn9AJZHc5QBT7enINY2hjxrqItsvJWSdxFxKuYlOlWJmE6zPPcsJuN7WFiF7me5DOAws4OyZyG6TOsr/KQziDaJm/mcy2V1V0+T0JeXxqqlrWC9mGGy3O6wwFaI0SdR+EMg9AEAACIAByqViZb+/prgFdN6qb306j3lTWs0BJ76Qjw0ktO+3ad60PQhMrfM9YwqK7lUPe4j+/OR40cDaqJeJ+xo80JsWih1WTBAcb8ysKrb+TfowQKy3v55wbBkk49FJbQusqr4snadL9hEtXC3nO1G1HG6UfxIj5oDnJlHPOVVAerWGmvYQxwc70hiTh7Bidy3/3ZFE6isxf8epNhUCl4n5ftYqWKzMP3IIquaFnquXO0sZ1yn/RWq69SuK6GdPXORfSz4HPnk1bNXO0+UZze5HqKIodNYwnHVVcOUivNcStxj4CGFYhWAWgXgmuF4JzdMhn6wDUm1DpmFyVY7IvQqeTRdod2v2F8lNn/gcpW+rUsOi9mAmFwlSo3Pw9JQ3p+8bhgnAMkPM613BxOBQqc2FEB4SmPQSAAAiAAAiAAAiAAAiAIAAEQAAEQAAEQPco3wIMADOXgFhOTghuAAAAAElFTkSuQmCC",
+                                "authenticatorGetInfo": {
+                                  "versions": [ "FIDO_2_0" ],
+                                  "aaguid": "08987058cadc4b81b6e130de50dcbe96",
+                                  "options": {
+                                    "plat": true,
+                                    "rk": true,
+                                    "up": true
+                                  },
+                                  "maxCredentialCountInList": 100,
+                                  "maxCredentialIdLength": 32,
+                                  "transports": [ "internal" ],
+                                  "algorithms": [{ "type": "public-key", "alg": -257 }],
+                                  "minPINLength": 4,
+                                  "firmwareVersion": 19042
+                                }
+                              },
+                              "statusReports": [
+                                {
+                                  "status": "FIDO_CERTIFIED_L1",
+                                  "effectiveDate": "2020-08-05",
+                                  "certificationDescriptor": "Windows Hello Hardware Authenticator",
+                                  "certificateNumber": "FIDO20020190418002",
+                                  "certificationPolicyVersion": "1.3.6",
+                                  "certificationRequirementsVersion": "1.1.0"
+                                },
+                                {
+                                  "status": "FIDO_CERTIFIED",
+                                  "effectiveDate": "2020-08-05"
+                                }
+                              ],
+                              "timeOfLastStatusChange": "2020-08-05"
+                            }
+                        </code></pre>
+                    </section>
+                </section> <!-- Cerimônias -->
+
+                <section> <!-- Outros conceitos -->
+                    <section>
+                        <h1>Outros conceitos</h1>
+                    </section>
+                    <section data-auto-animate>
+                        <h1 class="subtitle">Outros conceitos</h1>
+                        <h2>Presença vs Verificação do Usuário</h2>
+                        <ul>
+                            <li>
+                                Presença do Usuário
+                                <ul>
+                                    <li>Usuário deve possuir acesso ao autenticador</li>
+                                    <li>Sempre obrigatório</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Verificação do Usuário
+                                <ul>
+                                    <li>
+                                        Usuário providencia algo a mais ao autenticador, como um <b>pin</b> ou
+                                        <b>biometria</b>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section data-auto-animate>
+                        <h1 class="subtitle">Outros conceitos</h1>
+                        <h2>Presença vs Verificação do Usuário</h2>
+                        <ul>
+                            <li>
+                                O servidor deve especificar se deseja verificação
+                                <ul>
+                                    <li>
+                                        Pode ser <code>preferred</code>, <code>required</code> ou
+                                        <code>discouraged</code>
+                                    </li>
+                                    <li>Apenas suportado em alguns autenticadores</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Dica:
+                                <ul>
+                                    <li>Para autenticação, exija a <b>verificação</b></li>
+                                    <li>Como 2&ordm; fator, é aceitável usar <b>presença</b></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </section> <!-- Outros conceitos -->
+
+                <section> <!-- Código -->
+                    <section data-auto-animate data-auto-animate-restart>
+                        <h1>Código</h1>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Código</h1>
+                        <p>Criando uma credencial no navegador:</p>
+                        <pre><code class="js" data-trim data-line-numbers="|3|4-7|8-12|13|14-16|18">
+                            const credential = await navigator.credentials.create({
+                                publicKey: {
+                                    challenge: base64url.toBuffer(stringAleatoriaEnviadaPeloServidor),
+                                    rp: {
+                                        name: "Vinícius Campitelli",
+                                        id: "viniciuscampitelli.com",
+                                    },
+                                    user: {
+                                        id: base64url.toBuffer(user.id),
+                                        name: user.name,
+                                        displayName: user.displayName,
+                                    },
+                                    pubKeyCredParams: [{alg: -7, type: "public-key"}], // -7 => ES256
+                                    authenticatorSelection: {
+                                        authenticatorAttachment: "cross-platform", // ou "platform"
+                                    },
+                                    timeout: 60000,
+                                    attestation: "direct"
+                                }
+                            });
+                        </code></pre>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/credentials" target="_blank"
+                           rel="noopener" class="reference">
+                            Navigator: credentials property | MDN
+                        </a>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Código</h1>
+                        <p>
+                            Agora, você deve validar os dados gerados em <code>credential</code> para o servidor, que
+                            deve realizar uma validação
+                        </p>
+                        <a href="https://w3c.github.io/webauthn/#sctn-registering-a-new-credential" target="_blank"
+                           rel="noopener" class="reference">
+                            Registering a New Credential | W3C
+                        </a>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Código</h1>
+                        <p>Criando uma credencial no navegador:</p>
+                        <pre><code class="js" data-trim data-line-numbers>
+                            // console.log(credential);
+
+                            PublicKeyCredential {
+                                id: "PLdxbMe6vLX3SEDDLQysLV6StR9zLWRss3VH4u6TT192p-snes-IbSajJD_V5G8mZJWLIPxJAlGvwuM",
+                                rawId: ArrayBuffer(59),
+                                response: AuthenticatorAttestationResponse {
+                                    clientDataJSON: {
+                                        type: "webauthn.create",
+                                        challenge: "...", // confira com o challenge anterior
+                                        origin: "https://viniciuscampitelli.com"
+                                    },
+                                    attestationObject: {
+                                        authData: {
+                                            attestedCredentialData: {
+                                              credentialId: …,
+                                              credentialPublicKey: …
+                                            }
+                                        },
+                                        fmt: "fido-u2f",
+                                        attStmt: {
+                                            sig: Uint8Array(70),
+                                            x5c: Array(1),
+                                        },
+                                    },
+                                },
+                                type: "public-key"
+                            }
+                        </code></pre>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential" target="_blank"
+                           rel="noopener" class="reference">
+                            PublicKeyCredential | MDN
+                        </a>
+                    </section>
+                </section> <!-- Código -->
+
+                <section> <!-- Demo -->
+                    <section data-auto-animate data-auto-animate-restart>
+                        <h1>Demo</h1>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Demo</h1>
+                        <p>
+                            Clone este repositório, entre na pasta <code>demo</code>, inicialize os <em>containers</em>
+                            com o
+                            <a href="https://docs.docker.com/compose/" target="_blank" rel="noopener">Docker Compose</a>
+                            e acesse
+                            <a href="http://localhost:3000" target="_blank" rel="noopener">localhost:3000</a>:
+                        </p>
+                        <pre><code class="shell" data-trim>
+                            $ git clone --recursive git@github.com:vcampitelli/slides-webauthn.git
+                            $ cd demo
+                            $ docker compose up -d
+                        </code></pre>
+                    </section>
+                </section> <!-- Demo -->
+
+                <section> <!-- Referências -->
+                    <section data-auto-animate data-auto-animate-restart>
+                        <h1>Referências</h1>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Referências</h1>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/herrjemand/awesome-webauthn" target="_blank"
+                                   rel="noopener">herrjemand/awesome-webauthn</a>
+                            </li>
+                            <li>
+                                <a href="https://webauthn.io" target="_blank" rel="noopener">webauthn.io</a>
+                            </li>
+                            <li>
+                                <a href="https://webauthn.wtf" target="_blank" rel="noopener">webauthn.wtf</a>
+                            </li>
+                            <li>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Authentication_API"
+                                   target="_blank" rel="noopener">Web Authentication API | MDN</a>
+                            </li>
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/WebAuthn" target="_blank" rel="noopener">
+                                    Wikipedia: WebAuthn</a>
+                            </li>
+                        </ul>
+                    </section>
+                </section> <!-- Referências -->
+
+                <footer>@vcampitelli</footer>
+            </div>
+        </div>
+        <script src="reveal.js/dist/reveal.js"></script>
+        <script src="reveal.js/plugin/notes/notes.js"></script>
+        <script src="reveal.js/plugin/highlight/highlight.js"></script>
+        <script>
+            document.querySelectorAll('img.insert-svg').forEach(($img) => {
+                fetch($img.src).then(response => {
+                    if (!response.ok) {
+                        return;
+                    }
+                    response.text().then(contents => {
+                        const $wrapper = document.createElement('div');
+                        $wrapper.classList.add('svg-wrapper');
+                        $wrapper.innerHTML = contents.replace('<?xml version="1.0" encoding="UTF-8"?>', '');
+                        $img.parentNode.replaceChild($wrapper, $img);
+                    });
+                });
+            });
+            Reveal.initialize({
+                hash: true,
+                mouseWheel: true,
+                history: true,
+                plugins: [RevealHighlight, RevealNotes],
+                slideNumber: 'c/t',
+            });
+        </script>
+    </body>
+</html>
