@@ -1,6 +1,3 @@
 [submodule "docs/reveal.js"]
 	path = docs/reveal.js
 	url = git@github.com:hakimel/reveal.js.git
-[submodule "demo"]
-	path = demo
-	url = git@github.com:FusionAuth/fusionauth-example-react-guide.git
