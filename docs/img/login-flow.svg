@@ -2,9 +2,6 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="594px"
      height="481.5px" viewBox="-0.5 -0.5 396 321">
-    <defs>
-        <style type="text/css">@import url(https://fonts.googleapis.com/css?family=Lato);&#xa;</style>
-    </defs>
     <g>
         <g class="fragment" data-fragment-index="1">
             <g id="cell-k0UuIuyGkKwyVQRQeWFf-2" class="fragment fade-out" data-fragment-index="4">
@@ -22,13 +19,13 @@
                                  style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 143px; margin-left: 207px;">
                                 <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
                                      data-drawio-colors="color: #666666; ">
-                                    <div style="display: inline-block; font-size: 11px; font-family: Lato; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                    <div style="display: inline-block; font-size: 11px; font-family: Inter; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
                                         2. Inicia a cerimônia de autenticação
                                     </div>
                                 </div>
                             </div>
                         </foreignObject>
-                        <text x="207" y="143" fill="#666666" font-family="Lato" font-size="11px" text-anchor="middle">2.
+                        <text x="207" y="143" fill="#666666" font-family="Inter" font-size="11px" text-anchor="middle">2.
                             Inicia a cerimônia de autenticação
                         </text>
                     </switch>
@@ -50,13 +47,13 @@
                                  style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 220px; margin-left: 73px;">
                                 <div style="box-sizing: border-box; font-size: 0px; text-align: left;"
                                      data-drawio-colors="color: #666666; ">
-                                    <div style="display: inline-block; font-size: 11px; font-family: Lato; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                    <div style="display: inline-block; font-size: 11px; font-family: Inter; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
                                         4. Repassa o challenge e mais informações
                                     </div>
                                 </div>
                             </div>
                         </foreignObject>
-                        <text x="73" y="223" fill="#666666" font-family="Lato" font-size="11px">4. Repassa o challenge e
+                        <text x="73" y="223" fill="#666666" font-family="Inter" font-size="11px">4. Repassa o challenge e
                             mais informações
                         </text>
                     </switch>
@@ -78,13 +75,13 @@
                                  style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 98px; margin-left: 73px;">
                                 <div style="box-sizing: border-box; font-size: 0px; text-align: left;"
                                      data-drawio-colors="color: #666; ">
-                                    <div style="display: inline-block; font-size: 11px; font-family: Lato; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                    <div style="display: inline-block; font-size: 11px; font-family: Inter; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
                                         1. Começa o login
                                     </div>
                                 </div>
                             </div>
                         </foreignObject>
-                        <text x="73" y="101" fill="#666" font-family="Lato" font-size="11px">1. Começa o login</text>
+                        <text x="73" y="101" fill="#666" font-family="Inter" font-size="11px">1. Começa o login</text>
                     </switch>
                 </g>
             </g>
@@ -105,13 +102,13 @@
                              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 14px; margin-left: 67px;">
                             <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
                                  data-drawio-colors="color: #131200; ">
-                                <div style="display: inline-block; font-size: 12px; font-family: Lato; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                <div style="display: inline-block; font-size: 12px; font-family: Inter; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
                                     Usuário
                                 </div>
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="67" y="14" fill="#131200" font-family="Lato" font-size="12px" text-anchor="middle">
+                    <text x="67" y="14" fill="#131200" font-family="Inter" font-size="12px" text-anchor="middle">
                         Usuário
                     </text>
                 </switch>
@@ -132,7 +129,7 @@
                                  style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 176px; margin-left: 207px;">
                                 <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
                                      data-drawio-colors="color: #666666; ">
-                                    <div style="display: inline-block; font-size: 11px; font-family: Lato; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                    <div style="display: inline-block; font-size: 11px; font-family: Inter; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
                                         <div>3. Envia um challenge e outros dados
                                             <br/>
                                         </div>
@@ -140,7 +137,7 @@
                                 </div>
                             </div>
                         </foreignObject>
-                        <text x="207" y="187" fill="#666666" font-family="Lato" font-size="11px" text-anchor="middle">3.
+                        <text x="207" y="187" fill="#666666" font-family="Inter" font-size="11px" text-anchor="middle">3.
                             Envia um challenge e outros dados&#xa;
                         </text>
                     </switch>
@@ -157,17 +154,17 @@
                     <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
                                    height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
                         <div xmlns="http://www.w3.org/1999/xhtml"
-                             style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-end; width: 1px; height: 1px; padding-top: 207px; margin-left: 385px;">
+                             style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-end; width: 1px; height: 1px; padding-top: 203px; margin-left: 385px;">
                             <div style="box-sizing: border-box; font-size: 0px; text-align: right;"
                                  data-drawio-colors="color: #666666; ">
-                                <div style="display: inline-block; font-size: 11px; font-family: Lato; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
-                                    8. Valida a asserção com a chave pública do passo 2
+                                <div style="display: inline-block; font-size: 11px; font-family: Inter; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                    8. Valida a asserção com a chave pública do registro
                                 </div>
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="385" y="218" fill="#666666" font-family="Lato" font-size="11px" text-anchor="end">8. Valida
-                        a asserção com a chave pública do passo 2
+                    <text x="385" y="218" fill="#666666" font-family="Inter" font-size="11px" text-anchor="end">8. Valida
+                        a asserção com a chave pública do registro
                     </text>
                 </switch>
             </g>
@@ -182,16 +179,16 @@
                     <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
                                    height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
                         <div xmlns="http://www.w3.org/1999/xhtml"
-                             style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 181px; margin-left: 207px;">
+                             style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 176px; margin-left: 207px;">
                             <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
                                  data-drawio-colors="color: #666666; ">
-                                <div style="display: inline-block; font-size: 11px; font-family: Lato; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                <div style="display: inline-block; font-size: 11px; font-family: Inter; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
                                     <div>9. Inicia a sessão do usuário</div>
                                 </div>
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="207" y="192" fill="#666666" font-family="Lato" font-size="11px" text-anchor="middle">9.
+                    <text x="207" y="192" fill="#666666" font-family="Inter" font-size="11px" text-anchor="middle">9.
                         Inicia a sessão do usuário
                     </text>
                 </switch>
@@ -208,71 +205,70 @@
                              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 134px; margin-left: 347px;">
                             <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
                                  data-drawio-colors="color: #131200; ">
-                                <div style="display: inline-block; font-size: 12px; font-family: Lato; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                <div style="display: inline-block; font-size: 12px; font-family: Inter; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
                                     Aplicação
                                 </div>
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="347" y="134" fill="#131200" font-family="Lato" font-size="12px" text-anchor="middle">
+                    <text x="347" y="134" fill="#131200" font-family="Inter" font-size="12px" text-anchor="middle">
                         Aplica...
                     </text>
                 </switch>
             </g>
         </g>
-        <g id="cell-k0UuIuyGkKwyVQRQeWFf-10" class="fragment" data-fragment-index="4">
-            <path d="M 47 280 L 7 280 L 7 40 L 40.63 40" fill="none" stroke="#b3b3b3" stroke-miterlimit="10"
-                  pointer-events="stroke"/>
-            <path d="M 45.88 40 L 38.88 43.5 L 40.63 40 L 38.88 36.5 Z" fill="#b3b3b3" stroke="#b3b3b3"
-                  stroke-miterlimit="10" pointer-events="all"/>
-            <g transform="translate(-0.5 -0.5)rotate(-90 13 160)">
-                <switch>
-                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
-                                   height="100%"
-                                   requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                        <div xmlns="http://www.w3.org/1999/xhtml"
-                             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 160px; margin-left: 13px;">
-                            <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
-                                 data-drawio-colors="color: #666666; ">
-                                <div style="display: inline-block; font-size: 11px; font-family: Lato; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
-                                    5. Realiza a autenticação
-                                </div>
-                            </div>
-                        </div>
-                    </foreignObject>
-                    <text x="13" y="163" fill="#666666" font-family="Lato" font-size="11px" text-anchor="middle">5.
-                        Realiza a autenticação
-                    </text>
-                </switch>
-            </g>
-        </g>
-        <g class="fragment" data-fragment-index="5">
-            <g id="cell-k0UuIuyGkKwyVQRQeWFf-11" class="fragment fade-out" data-fragment-index="7">
-                <path d="M 87 280 L 117 280 L 117 174.11 L 87.51 174.14" fill="none" stroke="#b3b3b3"
-                      stroke-miterlimit="10"
+        <g class="fragment" data-fragment-index="4">
+            <g id="cell-k0UuIuyGkKwyVQRQeWFf-10" class="fragment fade-out" data-fragment-index="5">
+                <path d="M 47 280 L 7 280 L 7 40 L 40.63 40" fill="none" stroke="#b3b3b3" stroke-miterlimit="10"
                       pointer-events="stroke"/>
-                <path d="M 82.26 174.14 L 89.26 170.64 L 87.51 174.14 L 89.26 177.64 Z" fill="#b3b3b3" stroke="#b3b3b3"
+                <path d="M 45.88 40 L 38.88 43.5 L 40.63 40 L 38.88 36.5 Z" fill="#b3b3b3" stroke="#b3b3b3"
                       stroke-miterlimit="10" pointer-events="all"/>
-                <g transform="translate(-0.5 -0.5)">
+                <g transform="translate(-0.5 -0.5)rotate(-90 13 160)">
                     <switch>
                         <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
                                        height="100%"
                                        requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
                             <div xmlns="http://www.w3.org/1999/xhtml"
-                                 style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 224px; margin-left: 123px;">
-                                <div style="box-sizing: border-box; font-size: 0px; text-align: left;"
+                                 style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 160px; margin-left: 13px;">
+                                <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
                                      data-drawio-colors="color: #666666; ">
-                                    <div style="display: inline-block; font-size: 11px; font-family: Lato; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
-                                        6. Gera uma assserção assinada
+                                    <div style="display: inline-block; font-size: 11px; font-family: Inter; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                        5. Realiza a autenticação
                                     </div>
                                 </div>
                             </div>
                         </foreignObject>
-                        <text x="123" y="228" fill="#666666" font-family="Lato" font-size="11px">6. Gera uma assserção
-                            assinada
+                        <text x="13" y="163" fill="#666666" font-family="Inter" font-size="11px" text-anchor="middle">5.
+                            Realiza a autenticação
                         </text>
                     </switch>
                 </g>
+            </g>
+        </g>
+        <g class="fragment" data-fragment-index="5">
+            <path d="M 67 180 L 67 273.63" fill="none" stroke="#b3b3b3" stroke-miterlimit="10"
+                  pointer-events="stroke"/>
+            <path d="M 67 181.12 L 70.5 188.12 L 67 186.37 L 63.5 188.12 Z" fill="#b3b3b3" stroke="#b3b3b3"
+                  stroke-miterlimit="10" pointer-events="all"/>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                                   height="100%"
+                                   requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 244px; margin-left: 73px;">
+                            <div style="box-sizing: border-box; font-size: 0px; text-align: left;"
+                                 data-drawio-colors="color: #666666; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: Inter; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                    6. Gera uma asserção assinada
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="123" y="228" fill="#666666" font-family="Inter" font-size="11px">6. Gera uma asserção
+                        assinada
+                    </text>
+                </switch>
             </g>
         </g>
         <g id="cell-k0UuIuyGkKwyVQRQeWFf-5">
@@ -286,13 +282,13 @@
                              style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 307px; margin-left: 67px;">
                             <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
                                  data-drawio-colors="color: #131200; ">
-                                <div style="display: inline-block; font-size: 12px; font-family: Lato; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                <div style="display: inline-block; font-size: 12px; font-family: Inter; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
                                     Autenticador
                                 </div>
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="67" y="319" fill="#131200" font-family="Lato" font-size="12px" text-anchor="middle">
+                    <text x="67" y="319" fill="#131200" font-family="Inter" font-size="12px" text-anchor="middle">
                         Autent...
                     </text>
                 </switch>
@@ -311,13 +307,13 @@
                              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 157px; margin-left: 207px;">
                             <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
                                  data-drawio-colors="color: #666666; ">
-                                <div style="display: inline-block; font-size: 11px; font-family: Lato; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                <div style="display: inline-block; font-size: 11px; font-family: Inter; color: rgb(102, 102, 102); line-height: 1.2; pointer-events: all; white-space: nowrap;">
                                     7. Envia a asserção
                                 </div>
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="207" y="157" fill="#666666" font-family="Lato" font-size="11px" text-anchor="middle">7.
+                    <text x="207" y="157" fill="#666666" font-family="Inter" font-size="11px" text-anchor="middle">7.
                         Envia a asserção
                     </text>
                 </switch>
@@ -334,13 +330,13 @@
                              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 134px; margin-left: 67px;">
                             <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
                                  data-drawio-colors="color: #131200; ">
-                                <div style="display: inline-block; font-size: 12px; font-family: Lato; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                <div style="display: inline-block; font-size: 12px; font-family: Inter; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
                                     Navegador
                                 </div>
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="67" y="134" fill="#131200" font-family="Lato" font-size="12px" text-anchor="middle">
+                    <text x="67" y="134" fill="#131200" font-family="Inter" font-size="12px" text-anchor="middle">
                         Navega...
                     </text>
                 </switch>

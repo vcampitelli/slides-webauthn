@@ -18,6 +18,7 @@
   --r-link-color-dark: #2444c1;
   --r-link-color-hover: #5474f1;
   --turquoise: #09bc8a;
+  --box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.15);
 }
 
 /* Primeiro slide */
@@ -79,9 +80,13 @@ img.r-stretch {
 .d-flex {
   display: flex;
   justify-content: space-between;
+  column-gap: 1em;
 }
 .d-flex.half-columns > div {
   flex: 50% 0 1;
+}
+.align-items-center {
+  align-items: center;
 }
 
 /* Tipografia */
@@ -97,17 +102,42 @@ h2 > span {
   color: var(--turquoise);
 }
 .fw-bold {
-  font-weight: bold;
+  font-weight: 700;
 }
 .text-center {
   text-align: center;
 }
-.font-small {
+.font-size-sm {
   font-size: 0.8em;
 }
-code.font-small {
+.font-size-lg {
+  font-size: 1.4em;
+  letter-spacing: -2px;
+}
+.font-size-xl {
+  font-size: 4.8em;
+  letter-spacing: -5px;
+}
+code.font-size-sm {
   letter-spacing: -0.25px;
   line-height: 1.35;
+}
+.line-height-1 {
+  line-height: 1.1 !important;
+}
+.strike {
+  position: relative;
+  opacity: 0.5;
+}
+.strike:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  margin-top: -1px;
+  background: currentColor;
 }
 
 /* Referência */
@@ -159,6 +189,15 @@ li > ul > li + li {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.mb-1 {
+  margin-bottom: 10px !important;
+}
+.mb-3 {
+  margin-bottom: 30px !important;
+}
 
 /* Sobre mim */
 #about-me {
@@ -166,23 +205,24 @@ li > ul > li + li {
   grid-template-columns: auto 1fr;
   column-gap: 3rem;
 }
-#about-me > ul {
-  align-self: center;
-}
-#about-me > ul > li + li {
+#about-me > ul > li {
   margin-top: 0;
 }
 #profile-pic {
-  margin-bottom: 0;
-  border-radius: 50%;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
 }
 .about-me-links {
+  margin-top: 2rem;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  column-gap: 2.5rem;
+  row-gap: 1.25rem;
   justify-content: start;
 }
 .about-me-links > div {
+  flex: 33.333% 0 0;
   display: flex;
   align-items: center;
   font-size: 0.8em;
@@ -209,8 +249,24 @@ li > ul > li + li {
   font-weight: 600;
 }
 
+/* Componente: autenticadores */
+.authenticator {
+  display: flex;
+  column-gap: 1em;
+}
+.authenticator > div > img,
+.authenticator > figure > img {
+  margin: 0;
+  max-width: 300px;
+}
+.authenticator > div > img.rounded {
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
 /* Fragments */
 span.fragment.grow.visible {
+  font-size: 1.1em;
   font-weight: 600;
 }
 
@@ -221,6 +277,9 @@ code:not(.hljs) {
   padding: 0 5px;
   letter-spacing: -2px;
   font-size: 0.8em;
+}
+code.language-shell > .hljs-meta.prompt_ {
+  user-select: none;
 }
 
 /* Footer */

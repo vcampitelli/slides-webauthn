@@ -2,9 +2,6 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="562px"
      height="162px" viewBox="-0.5 -0.5 562 163">
-<!--    <defs>-->
-<!--        <style type="text/css">@import url(https://fonts.googleapis.com/css?family=Roboto);&#xa;</style>-->
-<!--    </defs>-->
     <g>
         <g id="cell-MuWaEmWVoSnIJiQIX_fs-1">
             <rect x="0" y="41" width="60" height="60" fill="none" stroke="none" pointer-events="all"/>
@@ -22,13 +19,13 @@
                              style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 108px; margin-left: 30px;">
                             <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
                                  data-drawio-colors="color: #131200; ">
-                                <div style="display: inline-block; font-size: 14px; font-family: Roboto; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                <div style="display: inline-block; font-size: 14px; font-family: Inter; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
                                     Usuário
                                 </div>
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="30" y="120" fill="#131200" font-family="Roboto" font-size="14px" text-anchor="middle">
+                    <text x="30" y="120" fill="#131200" font-family="Inter" font-size="14px" text-anchor="middle">
                         Usuário
                     </text>
                 </switch>
@@ -51,13 +48,13 @@
                              style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 111px; margin-left: 190px;">
                             <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
                                  data-drawio-colors="color: #131200; ">
-                                <div style="display: inline-block; font-size: 14px; font-family: Roboto; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                <div style="display: inline-block; font-size: 14px; font-family: Inter; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
                                     <div>Autenticador</div>
                                 </div>
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="190" y="123" fill="#131200" font-family="Roboto" font-size="14px" text-anchor="middle">
+                    <text x="190" y="123" fill="#131200" font-family="Inter" font-size="14px" text-anchor="middle">
                         Autenticad...
                     </text>
                 </switch>
@@ -86,13 +83,13 @@
                              style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 111px; margin-left: 510px;">
                             <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
                                  data-drawio-colors="color: #131200131200; ">
-                                <div style="display: inline-block; font-size: 14px; font-family: Roboto; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                <div style="display: inline-block; font-size: 14px; font-family: Inter; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
                                     Aplicação
                                 </div>
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="510" y="123" fill="#131200" font-family="Roboto" font-size="14px" text-anchor="middle">
+                    <text x="510" y="123" fill="#131200" font-family="Inter" font-size="14px" text-anchor="middle">
                         Aplicação
                     </text>
                 </switch>
@@ -109,13 +106,13 @@
                              style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 111px; margin-left: 350px;">
                             <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
                                  data-drawio-colors="color: #131200; ">
-                                <div style="display: inline-block; font-size: 14px; font-family: Roboto; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                <div style="display: inline-block; font-size: 14px; font-family: Inter; color: rgb(19, 18, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
                                     Navegador
                                 </div>
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="350" y="123" fill="#131200" font-family="Roboto" font-size="14px" text-anchor="middle">
+                    <text x="350" y="123" fill="#131200" font-family="Inter" font-size="14px" text-anchor="middle">
                         Navegador
                     </text>
                 </switch>
@@ -132,13 +129,13 @@
                              style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 278px; height: 1px; padding-top: 6px; margin-left: 281px;">
                             <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
                                  data-drawio-colors="color: rgb(0, 136, 43); ">
-                                <div style="display: inline-block; font-size: 14px; font-family: Roboto; color: rgb(0, 136, 43); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <div style="display: inline-block; font-size: 14px; font-family: Inter; color: rgb(0, 136, 43); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
                                     WebAuthn
                                 </div>
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="420" y="18" fill="rgb(19, 18, 0)" font-family="Roboto" font-size="14px"
+                    <text x="420" y="18" fill="rgb(19, 18, 0)" font-family="Inter" font-size="14px"
                           text-anchor="middle">WebAuthn
                     </text>
                 </switch>
@@ -155,13 +152,13 @@
                              style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 278px; height: 1px; padding-top: 6px; margin-left: 121px;">
                             <div style="box-sizing: border-box; font-size: 0px; text-align: center;"
                                  data-drawio-colors="color: rgb(145, 145, 145); ">
-                                <div style="display: inline-block; font-size: 14px; font-family: Roboto; color: rgb(145, 145, 145); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <div style="display: inline-block; font-size: 14px; font-family: Inter; color: rgb(145, 145, 145); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
                                     CTAP2
                                 </div>
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="260" y="18" fill="rgb(19, 18, 0)" font-family="Roboto" font-size="14px"
+                    <text x="260" y="18" fill="rgb(19, 18, 0)" font-family="Inter" font-size="14px"
                           text-anchor="middle">CTAP2
                     </text>
                 </switch>
