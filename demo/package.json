@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "mkcert": "mkcert -install && mkcert -key-file ssl/key.pem -cert-file ssl/cert.pem webauthn.local",
+    "build": "browserify src/app.js -o public/app.js",
+    "serve": "http-server public/ -S -C ssl/cert.pem -K ssl/key.pem -p 8080"
+  },
+  "dependencies": {
+    "base64url": "^3.0.1",
+    "browserify": "^17.0.0",
+    "http-server": "^14.1.1"
+  }
+}
