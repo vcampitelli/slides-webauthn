@@ -43,8 +43,8 @@
                                 <li>DevRel na <a href="https://fusionauth.io" target="_blank" rel="noopener">FusionAuth</a></li>
                             </ul>
                             <div class="fw-bold text-center line-height-1">Vinícius<br>Campitelli</div>
-                            </div>
-                            <div>
+                        </div>
+                        <div>
                             <div class="about-me-links">
                                 <div>
                                     <svg role="img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -255,23 +255,28 @@
                             </p>
                         </div>
                     </section>
-                    <section data-auto-animate>
+                    <section>
                         <h1>Senhas são <span>ruins</span></h1>
-                        <p class="font-size-lg line-height-1 mb-1">
-                            Qual o primeiro registro<br>de <b>senhas digitais</b>?
-                        </p>
-                        <p class="mt-0 mb-3">
-                            <span class="fragment">Em <b>1961</b>, no sistema <a
-                                    href="https://en.wikipedia.org/wiki/Compatible_Time-Sharing_System"
-                                    target="_blank" rel="noopener">CTSS</a> do MIT</span>
-                        </p>
-
-                        <p class="font-size-lg fragment line-height-1 mb-1">
-                            E o primeiro<br><b>vazamento de senhas</b>?
-                        </p>
-                        <p class="mt-0">
-                            <span class="fragment">Em <b>1966</b>, no mesmo sistema</span>
-                        </p>
+                        <div class="d-flex half-columns">
+                            <div>
+                                <p class="font-size-lg line-height-1 mb-1">
+                                    Qual o primeiro registro<br>de <b>senhas digitais</b>?
+                                </p>
+                                <p class="mt-0 mb-4">
+                                    <span class="fragment">Em <b>1961</b>, no sistema <a
+                                            href="https://en.wikipedia.org/wiki/Compatible_Time-Sharing_System"
+                                            target="_blank" rel="noopener">CTSS</a> do MIT</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="font-size-lg fragment line-height-1 mb-1">
+                                    E o primeiro<br><b>vazamento de senhas</b>?
+                                </p>
+                                <p class="mt-0">
+                                    <span class="fragment">Em <b>1966</b>, no mesmo sistema</span>
+                                </p>
+                            </div>
+                        </div>
                         <a href="https://www.wired.com/2012/01/computer-password/" target="_blank" rel="noopener"
                            class="reference fragment">
                             The World's First Computer Password? It Was Useless Too | WIRED
@@ -393,84 +398,6 @@
                         </a>
                     </section>
                 </section> <!-- Suporte -->
-
-                <section> <!-- Autenticadores -->
-                    <section data-auto-animate data-auto-animate-restart>
-                        <h1>Autenticadores</h1>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>Autenticadores</h1>
-                        <p class="fw-bold">Via <span class="color-accent">Hardware Externo</span>:</p>
-                        <div class="authenticator">
-                            <ul>
-                                <li>São <em>cross-platform</em></li>
-                                <li>
-                                    Relativamente caros: a Yubikey sai por US$50 no site oficial ou entre R$300-400 no Brasil
-                                </li>
-                                <li>
-                                    Exemplos:
-                                    <ul>
-                                        <li><a href="https://www.yubico.com/" target="_blank" rel="noopener">Yubikey</a></li>
-                                        <li><a href="https://solokeys.com/" target="_blank" rel="noopener">Solokey</a></li>
-                                        <li><a href="https://trezor.io" target="_blank" rel="noopener">Trezor</a></li>
-                                        <li><a href="https://cloud.google.com/titan-security-key/" target="_blank" rel="noopener">Google Titan</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <figure>
-                                <img src="img/yubikey.png" alt="Yubikey">
-                                <figcaption>
-                                    <a href="https://www.yubico.com/br/product/yubikey-5-series/yubikey-5-nfc/"
-                                       target="_blank" rel="noopener" class="reference">Yubikey</a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>Autenticadores</h1>
-                        <p class="fw-bold">Via <span class="color-accent">Plataforma</span>:</p>
-                        <div class="authenticator">
-                            <ul>
-                                <li>Embutidos no próprio sistema operacional</li>
-                                <li>
-                                    Geralmente acompanham <em>hardware</em>, como o
-                                    <a href="https://support.apple.com/guide/security/secure-enclave-sec59b0b31ff/web"
-                                        target="_blank" rel="noopener">Secure Enclave</a> da Apple ou o
-                                    <a href="https://support.microsoft.com/en-us/topic/what-is-tpm-705f241d-025d-4470-80c5-4feeb24fa1ee"
-                                        target="_blank" rel="noopener">TPM</a> em Windows
-                                </li>
-                                <li>
-                                    Exemplos:
-                                    <ul>
-                                        <li>Windows Hello</li>
-                                        <li>Apple Touch ID</li>
-                                        <li>Android Fingerprint</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <div>
-                                <img src="img/android.png" alt="Android" class="rounded">
-                            </div>
-                        </div>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>Autenticadores</h1>
-                        <p class="fw-bold">Via <span class="color-accent">Software</span>:</p>
-                        <div class="authenticator">
-                            <ul>
-                                <li>
-                                    Para desenvolvimento, é possível utilizar emuladores, como o
-                                    <a href="https://developer.chrome.com/docs/devtools/webauthn/" target="_blank"
-                                        rel="noopener">Google Chrome</a> ou <a href="https://github.com/GramThanos/WebDevAuthn"
-                                        target="_blank" rel="noopener">essa extensão</a>
-                                </li>
-                            </ul>
-                            <div>
-                                <img src="img/chrome-virtual.png" alt="Chrome DevTools" class="rounded">
-                            </div>
-                        </div>
-                    </section>
-                </section> <!-- Autenticadores -->
 
                 <section> <!-- Cerimônias -->
                     <section data-auto-animate data-auto-animate-restart>
@@ -600,12 +527,95 @@
                             }
                         </code></pre>
                     </section>
-                    <section data-auto-animate>
+                    <section>
+                        <h1 class="subtitle">Cerimônias</h1>
+                        <h2>Registro</h2>
+                        <img src="img/register-flow.svg" alt="Registro com WebAuthn" class="insert-svg">
+                    </section>
+                    <section>
                         <h1 class="subtitle">Cerimônias &raquo; Autenticação</h1>
                         <h2>Asserção</h2>
                         <img src="img/login-flow.svg" alt="Login com WebAuthn" class="insert-svg">
                     </section>
                 </section> <!-- Cerimônias -->
+
+                <section> <!-- Autenticadores -->
+                    <section data-auto-animate data-auto-animate-restart>
+                        <h1>Autenticadores</h1>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Autenticadores</h1>
+                        <p class="fw-bold">Via <span class="color-accent">Hardware Externo</span>:</p>
+                        <div class="authenticator">
+                            <ul>
+                                <li>São <em>cross-platform</em></li>
+                                <li>
+                                    Relativamente caros: a Yubikey sai por US$50 no site oficial ou entre R$300-400 no Brasil
+                                </li>
+                                <li>
+                                    Exemplos:
+                                    <ul>
+                                        <li><a href="https://www.yubico.com/" target="_blank" rel="noopener">Yubikey</a></li>
+                                        <li><a href="https://solokeys.com/" target="_blank" rel="noopener">Solokey</a></li>
+                                        <li><a href="https://trezor.io" target="_blank" rel="noopener">Trezor</a></li>
+                                        <li><a href="https://cloud.google.com/titan-security-key/" target="_blank" rel="noopener">Google Titan</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <figure>
+                                <img src="img/yubikey.png" alt="Yubikey">
+                                <figcaption>
+                                    <a href="https://www.yubico.com/br/product/yubikey-5-series/yubikey-5-nfc/"
+                                       target="_blank" rel="noopener" class="reference">Yubikey</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Autenticadores</h1>
+                        <p class="fw-bold">Via <span class="color-accent">Plataforma</span>:</p>
+                        <div class="authenticator">
+                            <ul>
+                                <li>Embutidos no próprio sistema operacional</li>
+                                <li>
+                                    Geralmente acompanham <em>hardware</em>, como o
+                                    <a href="https://support.apple.com/guide/security/secure-enclave-sec59b0b31ff/web"
+                                       target="_blank" rel="noopener">Secure Enclave</a> da Apple ou o
+                                    <a href="https://support.microsoft.com/en-us/topic/what-is-tpm-705f241d-025d-4470-80c5-4feeb24fa1ee"
+                                       target="_blank" rel="noopener">TPM</a> em Windows
+                                </li>
+                                <li>
+                                    Exemplos:
+                                    <ul>
+                                        <li>Windows Hello</li>
+                                        <li>Apple Touch ID</li>
+                                        <li>Android Fingerprint</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div>
+                                <img src="img/android.png" alt="Android" class="rounded">
+                            </div>
+                        </div>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Autenticadores</h1>
+                        <p class="fw-bold">Via <span class="color-accent">Software</span>:</p>
+                        <div class="authenticator">
+                            <ul>
+                                <li>
+                                    Para desenvolvimento, é possível utilizar emuladores, como o
+                                    <a href="https://developer.chrome.com/docs/devtools/webauthn/" target="_blank"
+                                       rel="noopener">Google Chrome</a> ou <a href="https://github.com/GramThanos/WebDevAuthn"
+                                                                              target="_blank" rel="noopener">essa extensão</a>
+                                </li>
+                            </ul>
+                            <div>
+                                <img src="img/chrome-virtual.png" alt="Chrome DevTools" class="rounded">
+                            </div>
+                        </div>
+                    </section>
+                </section> <!-- Autenticadores -->
 
                 <section> <!-- Presença vs Verificação do Usuário -->
                     <section data-auto-animate data-auto-animate-restart>
@@ -873,6 +883,13 @@
                 history: true,
                 plugins: [RevealHighlight, RevealNotes],
                 slideNumber: 'c/t',
+            });
+
+            Reveal.configure({
+                keyboard: {
+                    38: 'prev',
+                    40: 'next'
+                }
             });
         </script>
     </body>
