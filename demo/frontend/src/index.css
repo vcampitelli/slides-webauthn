@@ -1,0 +1,126 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 0 0 0.25em;
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #09bc8a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  flex: 0 1 50%;
+}
+button:hover {
+  background-color: #13c69a;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#app {
+  width: 1280px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+pre {
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em;
+  text-align: left;
+  border-radius: 10px;
+  background-color: #2a2a2a;
+  scrollbar-width: thin;
+}
+
+input {
+  margin-bottom: 1em;
+  width: 100%;
+  padding: 1em 0.75em;
+  box-sizing: border-box;
+  font-size: 1em;
+  background-color: #f5f5f5;
+  border: 1px #f0f0f0 solid;
+  border-radius: 10px;
+}
+input:focus {
+  background-color: #fff;
+  outline: none;
+}
+
+a + div {
+  max-width: 300px;
+  margin: 2em auto 0;
+}
+
+.d-flex {
+  display: flex;
+  column-gap: 1em;
+}
+
+#error {
+  margin-top: 1em;
+}
+#error > p {
+  text-align: left;
+  color: #bc8a09;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+  background: #2a2a2a;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+  border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #000;
+}

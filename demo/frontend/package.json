@@ -1,12 +1,20 @@
 {
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "mkcert": "mkcert -install && mkcert -key-file ssl/key.pem -cert-file ssl/cert.pem webauthn.local",
-    "build": "browserify src/app.js -o public/app.js",
-    "serve": "http-server public/ -S -C ssl/cert.pem -K ssl/key.pem -p 8080"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "base64url": "^3.0.1",
-    "browserify": "^17.0.0",
-    "http-server": "^14.1.1"
+    "buffer": "^6.0.3",
+    "preact": "^10.16.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.5.0",
+    "vite": "^4.4.5",
+    "vite-plugin-mkcert": "^1.16.0"
   }
 }
