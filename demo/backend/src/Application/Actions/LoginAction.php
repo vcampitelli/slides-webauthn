@@ -15,7 +15,7 @@ use function random_bytes;
 
 class LoginAction extends Action
 {
-    const SESSION_CHALLENGE_KEY = 'login_challenge';
+    public const SESSION_CHALLENGE_KEY = 'login_challenge';
 
     public function __construct(
         private readonly UserRepositoryInterface $userRepository,

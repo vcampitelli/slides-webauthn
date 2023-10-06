@@ -1,7 +1,6 @@
 import {useState} from 'preact/hooks';
 import {signin, signup} from './functions.js';
 
-
 export function App() {
     if (!window.PublicKeyCredential) {
         return (
@@ -66,4 +65,4 @@ export function App() {
             ) : null)}
         </>
     );
-};
+}

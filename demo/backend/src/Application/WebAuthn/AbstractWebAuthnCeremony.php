@@ -32,8 +32,7 @@ abstract class AbstractWebAuthnCeremony
 
     protected function getRpId(): string
     {
-        return $_SERVER['SERVER_NAME'];
-        return 'webauthn.local';
+        return $_ENV['APP_RP_ID'] ?? $_SERVER['SERVER_NAME'];
     }
 
     protected function getExtensionOutputCheckerHandler(): ExtensionOutputCheckerHandler
