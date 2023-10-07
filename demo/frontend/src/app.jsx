@@ -17,7 +17,7 @@ export function App() {
         setError(error);
     };
 
-    const handleResponse = (response) => {
+    const handleSuccess = (response) => {
         if ((response.statusCode !== 200) || (!response.data)) {
             return handleError(response);
         }
@@ -32,20 +32,22 @@ export function App() {
 
     return (
         <>
-            <div className="container">
+            <div>
                 <h1>Demonstração de WebAuthn</h1>
-                <a href="https://viniciuscampitelli.com">Vinícius Campitelli</a>
+                <div>
+                    <a href="https://viniciuscampitelli.com">Vinícius Campitelli</a>
+                </div>
                 {(user) ? null : (
-                    <div>
+                    <div className="form">
                         <input type="text" placeholder="Seu nome de usuário" value={username}
                                onChange={e => setUsername(e.target.value.replaceAll(/[^a-zA-Z0-9_-]+/g, '-'))}/>
                         <div className="d-flex">
                             <button type="button"
-                                    onClick={() => signin(username, setError, handleResponse, handleError)}>
+                                    onClick={() => signin(username, setError, handleSuccess, handleError)}>
                                 Entrar
                             </button>
                             <button type="button"
-                                    onClick={() => signup(username, setError, handleResponse, handleError)}>
+                                    onClick={() => signup(username, setError, handleSuccess, handleError)}>
                                 Cadastrar
                             </button>
                         </div>

@@ -26,131 +26,104 @@ const postRequest = (uri, data) => fetch(`${BASE_URL}${uri}`, {
     headers: {
         'Content-Type': 'application/json',
     },
-});
+}).then(response => response.json());
 
-export const signin = (username, setError, handleResponse, handleError) => {
+export const signin = async (username, setError, handleSuccess, handleError) => {
     if (!username.length) {
         setError({error: 'Por favor, preencha seu nome de usuário.'});
         return;
     }
     setError(null);
-    postRequest('/login/init', {
-        username,
-    })
-        .then((response) => response.json())
-        .then((response) => {
-            if ((response.statusCode !== 200) || (!response.data)) {
-                return handleError(response);
-            }
 
-            const requestOptions = {...response.data};
+    try {
+        const response = await postRequest('/login/init', {
+            username,
+        });
+        if ((response.statusCode !== 200) || (!response.data)) {
+            return handleError(response);
+        }
 
-            if (!requestOptions.allowCredentials) {
-                return handleError({
-                    error: 'Nenhuma credencial foi registrada para o usuário.',
-                });
-            }
+        const requestOptions = {...response.data};
 
-            requestOptions.challenge = toBuffer(requestOptions.challenge);
-            requestOptions.allowCredentials.map((credential) => {
-                credential.id = parseBase64url(credential.id);
-                return credential;
+        if (!requestOptions.allowCredentials) {
+            return handleError({
+                error: 'Nenhuma credencial foi registrada para o usuário.',
             });
-            requestOptions.timeout = 30000;
+        }
 
-            console.log('CredentialRequestOptions', requestOptions);
+        requestOptions.challenge = toBuffer(requestOptions.challenge);
+        requestOptions.allowCredentials.forEach((credential) => credential.id = parseBase64url(credential.id));
+        requestOptions.timeout = 30000;
 
-            navigator.credentials.get({
-                publicKey: requestOptions,
-            }).then((credential) => {
-                console.log('Credencial retornada', credential);
-                const assertion = {
-                    authenticatorAttachment: credential.authenticatorAttachment,
-                    id: credential.id,
-                    rawId: toBase64url(credential.rawId),
-                    type: credential.type,
-                    response: {
-                        authenticatorData: noPadding(toBase64url(credential.response.authenticatorData)),
-                        clientDataJSON: noPadding(toBase64url(credential.response.clientDataJSON)),
-                        signature: noPadding(toBase64url(credential.response.signature)),
-                    },
-                    user: {
-                        id: response.data.user.id,
-                    },
-                };
-                postRequest('/login/assertion', assertion)
-                    .then((response) => response.json())
-                    .then(handleResponse)
-                    .catch(handleError);
-            })
-                .catch(handleError);
-        })
-        .catch(handleError);
+        console.log('CredentialRequestOptions', requestOptions);
+
+        const credential = await navigator.credentials.get({
+            publicKey: requestOptions,
+        });
+        console.log('Credencial retornada', credential);
+
+        const assertion = {
+            authenticatorAttachment: credential.authenticatorAttachment,
+            id: credential.id,
+            rawId: toBase64url(credential.rawId),
+            type: credential.type,
+            response: {
+                authenticatorData: noPadding(toBase64url(credential.response.authenticatorData)),
+                clientDataJSON: noPadding(toBase64url(credential.response.clientDataJSON)),
+                signature: noPadding(toBase64url(credential.response.signature)),
+            },
+            user: {
+                id: response.data.user.id,
+            },
+        };
+        const user = await postRequest('/login/assertion', assertion);
+        handleSuccess(user);
+    } catch (err) {
+        handleError(err);
+    }
 };
 
-export const signup = (username, setError, handleResponse, handleError) => {
+export const signup = async (username, setError, handleSuccess, handleError) => {
     if (!username.length) {
         setError({error: 'Por favor, preencha seu nome de usuário.'});
         return;
     }
     setError(null);
-    fetch(`${BASE_URL}/register/init`, {
-        method: 'POST',
-        credentials: 'include',
-        body: JSON.stringify({
+    try {
+        const response = await postRequest('/register/init', {
             username,
-        }),
-        headers: {
-            'Content-Type': 'application/json',
-        },
-    })
-        .then((response) => response.json())
-        .then((response) => {
-            if ((response.statusCode !== 200) || (!response.data)) {
-                return handleError(response);
-            }
-
-            const createOptions = {...response.data};
-            createOptions.challenge = toBuffer(createOptions.challenge);
-            createOptions.user.id = toBuffer(createOptions.user.id);
-
-            console.log('CredentialCreateOptions', createOptions);
-
-            navigator.credentials.create({
-                publicKey: createOptions,
-            }).then((credential) => {
-                console.log('Credencial criada', credential);
-                const registration = {
-                    id: credential.id,
-                    rawId: toBase64url(credential.rawId),
-                    type: credential.type,
-                    response: {
-                        attestationObject: noPadding(toBase64url(credential.response.attestationObject)),
-                        clientDataJSON: noPadding(toBase64url(credential.response.clientDataJSON)),
-                    },
-                    user: {
-                        id: parseBuffer(response.data.user.id),
-                    },
-                };
-                fetch(`${BASE_URL}/register/attestation`, {
-                    method: 'POST',
-                    body: JSON.stringify(registration),
-                    credentials: 'include',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                })
-                    .then((response) => response.json())
-                    .then(handleResponse)
-                    .catch((err) => {
-                        handleError(err);
-                    });
-            })
-                .catch((err) => {
-                    handleError(err);
-                });
-        })
-        .catch((err) => {
-            handleError(err);
         });
+        if ((response.statusCode !== 200) || (!response.data)) {
+            return handleError(response);
+        }
+
+        const createOptions = {...response.data};
+        createOptions.challenge = toBuffer(createOptions.challenge);
+        createOptions.user.id = toBuffer(createOptions.user.id);
+
+        console.log('CredentialCreateOptions', createOptions);
+
+        const credential = await navigator.credentials.create({
+            publicKey: createOptions,
+        });
+        console.log('Credencial criada', credential);
+
+        const registration = {
+            id: credential.id,
+            rawId: toBase64url(credential.rawId),
+            type: credential.type,
+            response: {
+                attestationObject: noPadding(toBase64url(credential.response.attestationObject)),
+                clientDataJSON: noPadding(toBase64url(credential.response.clientDataJSON)),
+            },
+            user: {
+                id: parseBuffer(response.data.user.id),
+            },
+        };
+
+        const user = await postRequest('/register/attestation', registration);
+        handleSuccess(user);
+    } catch (err) {
+        handleError(err);
+    }
 };
