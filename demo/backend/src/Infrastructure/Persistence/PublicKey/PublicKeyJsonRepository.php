@@ -40,11 +40,6 @@ class PublicKeyJsonRepository extends AbstractJsonRepository implements PublicKe
 
     public function findAllForUserEntity(PublicKeyCredentialUserEntity $userEntity): PublicKeyCredentialSourceCollection
     {
-        error_log(json_encode($this->loadData()));
-        error_log(json_encode(\array_filter(
-            $this->loadData(),
-            fn(PublicKeyCredentialSource $credential) => $credential->userHandle === $userEntity->id,
-        )));
         return new PublicKeyCredentialSourceCollection(
             \array_filter(
                 $this->loadData(),
