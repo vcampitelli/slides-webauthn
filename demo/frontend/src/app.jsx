@@ -32,28 +32,23 @@ export function App() {
 
     return (
         <>
-            <div>
-                <h1>Demonstração de WebAuthn</h1>
-                <div>
-                    <a href="https://viniciuscampitelli.com">Vinícius Campitelli</a>
-                </div>
-                {(user) ? null : (
-                    <div className="form">
-                        <input type="text" placeholder="Seu nome de usuário" value={username}
-                               onChange={e => setUsername(e.target.value.replaceAll(/[^a-zA-Z0-9_-]+/g, '-'))}/>
-                        <div className="d-flex">
-                            <button type="button"
-                                    onClick={() => signin(username, setError, handleSuccess, handleError)}>
-                                Entrar
-                            </button>
-                            <button type="button"
-                                    onClick={() => signup(username, setError, handleSuccess, handleError)}>
-                                Cadastrar
-                            </button>
-                        </div>
+            <h1>Demonstração de WebAuthn</h1>
+            {(user) ? null : (
+                <div className="form">
+                    <input type="text" placeholder="Seu nome de usuário" value={username}
+                           onChange={e => setUsername(e.target.value.replaceAll(/[^a-zA-Z0-9_-]+/g, '-'))}/>
+                    <div className="d-flex">
+                        <button type="button"
+                                onClick={() => signin(username, setError, handleSuccess, handleError)}>
+                            Entrar
+                        </button>
+                        <button type="button"
+                                onClick={() => signup(username, setError, handleSuccess, handleError)}>
+                            Cadastrar
+                        </button>
                     </div>
-                )}
-            </div>
+                </div>
+            )}
             {(user) ? (
                 <div>
                     <h2>Bem-vindo, {user.displayName}</h2>
@@ -65,6 +60,10 @@ export function App() {
                     <pre>{JSON.stringify(error, null, 2)}</pre>
                 </div>
             ) : null)}
+            <footer>
+                <a href="https://viniciuscampitelli.com/slides-webauthn">Slides</a>
+                <p>Por <a href="https://viniciuscampitelli.com">Vinícius Campitelli</a></p>
+            </footer>
         </>
     );
 }

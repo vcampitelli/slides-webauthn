@@ -31,7 +31,7 @@ body {
 }
 
 h1 {
-  margin: 0 0 0.25em;
+  margin: 0 0 1.5em;
   font-size: 3.2em;
   line-height: 1.1;
 }
@@ -95,8 +95,15 @@ input:focus {
   max-width: 300px;
   margin: 0 auto;
 }
-h1 + div {
-  margin-bottom: 5em;
+footer {
+  margin-top: 5em;
+  padding-top: 1em;
+  border-top: 1px #444 solid;
+  display: flex;
+  justify-content: space-between;
+}
+p {
+  margin: 0;
 }
 
 .d-flex {

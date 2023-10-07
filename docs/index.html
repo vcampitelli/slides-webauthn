@@ -785,27 +785,17 @@
                         <h1>Demo</h1>
                         <p>Se quiser executar localmente:</p>
                         <ul>
-                            <li>
-                                Instale o <a href="https://github.com/FiloSottile/mkcert" target="_blank"
-                                             rel="noopener">mkcert</a> ou use a própria <a
-                                    href="https://www.openssl.org/" target="_blank" rel="noopener">OpenSSL</a> para
-                                criar uma CA e gerar um certificado SSL para seu site local
-                            </li>
-                            <li>Adicione uma entrada no <code>/etc/hosts</code> para <code>webauthn.local</code></li>
                             <li>Clone este repositório e entre na pasta <code>demo</code></li>
+                            <li>Inicialize os <em>containers</em></li>
                             <li>
-                                Acesse a aplicação em <a href="https://webauthn.local:8080" target="_blank"
-                                                         rel="noopener">webauthn.local:8080</a>
+                                Acesse a aplicação em <a href="https://localhost:5173" target="_blank"
+                                                         rel="noopener">localhost:5173</a>
                             </li>
                         </ul>
                         <pre><code class="shell" data-trim>
                             $ git clone --recursive git@github.com:vcampitelli/slides-webauthn.git
                             $ cd demo
-                            $ npm run mkcert
-                            $ echo "127.0.0.1 webauthn.local" | sudo tee -a /etc/hosts
-                            $ npm install
-                            $ npm run build
-                            $ npm run serve
+                            $ docker compose up -d
                         </code></pre>
                     </section>
                 </section> <!-- Demo -->
