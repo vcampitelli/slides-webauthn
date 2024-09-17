@@ -16,4 +16,3 @@ cache.properties
 .php_cs.cache
 # Composer
 composer.phar
-composer.lock

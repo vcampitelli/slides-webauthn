@@ -22,7 +22,7 @@
         "php-di/php-di": "^6.4",
         "slim/psr7": "^1.6",
         "slim/slim": "^4.12",
-        "web-auth/webauthn-lib": "^4.7"
+        "web-auth/webauthn-lib": "4.7.*"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.10",
